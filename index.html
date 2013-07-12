@@ -7,21 +7,23 @@
         <script src="jquery.min.js"></script>
         <script src="init.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css">
-
     </head>
+
     <body>
         <script src="three.min.js"></script>
         <script src="PointerLockControls.js"></script>
 
         <div id="blocker">
-
             <div id="instructions">
                 <span style="font-size:46px">Welcome to Gallery 3D,<br /> <span style="font-size:28px">the world's first interactive <br />and explorable web-based 3D gallery.</span><br /> <br /><span style="font-size:18px">Click anywhere on the screen to start. </span>
                 <br />
                 <br />
                 <span style="font-size:32px">(W, A, S, D = Move, MOUSE = Look around)</span>
             </div>
-
+        </div>
+        <div id ="controls">
+            <div id="q" class="key">Q<br /><span class="key-info">Turn Left</span></div><div id="w" class="key">W<br /><span class="key-info">Forward</span></div><div id="e" class="key">E<br /><span class="key-info">Turn Right</span></div> <br />
+            <div id="a" class="key">A<br /><span class="key-info">Move Left</span></div><div id="s" class="key">S<br /><span class="key-info">Backwards</span></div><div id="d" class="key">D<br /><span class="key-info">Move Right</span></div>
         </div>
 
         <script>
@@ -156,19 +158,19 @@
                 for ( var i = 0, l = geometry.vertices.length; i < l; i ++ ) {
 
                     var vertex = geometry.vertices[ i ];
-                    vertex.x += Math.random() * 20 - 10;
-                    vertex.y += Math.random() * 2;
-                    vertex.z += Math.random() * 20 - 10;
+                    vertex.x += 10;
+                    vertex.y += 2;
+                    vertex.z += 10;
 
                 }
 
                 for ( var i = 0, l = geometry.faces.length; i < l; i ++ ) {
 
                     var face = geometry.faces[ i ];
-                    face.vertexColors[ 0 ] = new THREE.Color().setHSL( Math.random() * 0.2 + 0.5, 0.75, Math.random() * 0.25 + 0.75 );
-                    face.vertexColors[ 1 ] = new THREE.Color().setHSL( Math.random() * 0.2 + 0.5, 0.75, Math.random() * 0.25 + 0.75 );
-                    face.vertexColors[ 2 ] = new THREE.Color().setHSL( Math.random() * 0.2 + 0.5, 0.75, Math.random() * 0.25 + 0.75 );
-                    face.vertexColors[ 3 ] = new THREE.Color().setHSL( Math.random() * 0.2 + 0.5, 0.75, Math.random() * 0.25 + 0.75 );
+                    face.vertexColors[ 0 ] = new THREE.Color(0xffffff);
+                    face.vertexColors[ 1 ] = new THREE.Color(0xdddddd);
+                    face.vertexColors[ 2 ] = new THREE.Color(0xffffff);
+                    face.vertexColors[ 3 ] = new THREE.Color(0xdddddd);
 
                 }
 

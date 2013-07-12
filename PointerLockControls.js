@@ -42,11 +42,12 @@ THREE.PointerLockControls = function ( camera ) {
 	};
 
 	var onKeyDown = function ( event ) {
-
+		
 		switch ( event.keyCode ) {
 
 			case 81: //q
 				turnLeft = true;
+				colorChange();
 				break;
 
 			case 69: //e

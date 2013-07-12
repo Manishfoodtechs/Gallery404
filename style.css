@@ -1,4 +1,4 @@
-            @font-face {
+@font-face {
          font-family: 'GothamBold';
          src: url('fonts/gotham-bold.eot');
          src: url('fonts/gotham-bold.eot') format('embedded-opentype'),
@@ -6,59 +6,77 @@
          url('fonts/gotham-bold.ttf') format('truetype'),
          url('fonts/gotham-bold.svg#GothamBold') format('svg');
 }
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-color: #ffffff;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'GothamBold';
+}
+#blocker {
+    position: absolute;
+    display:none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+#instructions {
+    width: 60%;
+    line-height:1.4em;
+    margin:-50px auto 0 auto;
+    height: 100%;
+    letter-spacing: -1px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
 
-            html, body {
-                width: 100%;
-                height: 100%;
-            }
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
 
-            body {
-                background-color: #ffffff;
-                margin: 0;
-                overflow: hidden;
-                font-family: 'GothamBold';
-            }
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
 
-            #blocker {
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
 
-                position: absolute;
-                display:none;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0,0,0,0.5);
-
-            }
-
-            #instructions {
-
-                width: 60%;
-                line-height:1.4em;
-                margin:-50px auto 0 auto;
-                height: 100%;
-                letter-spacing: -1px;
-                display: -webkit-box;
-                display: -moz-box;
-                display: box;
-
-                -webkit-box-orient: horizontal;
-                -moz-box-orient: horizontal;
-                box-orient: horizontal;
-
-                -webkit-box-pack: center;
-                -moz-box-pack: center;
-                box-pack: center;
-
-                -webkit-box-align: center;
-                -moz-box-align: center;
-                box-align: center;
-
-                -webkit-transition: all 1s ease;                  
-                -moz-transition: all 1s ease;                 
-                -o-transition: all 1s ease;   
-                -ms-transition: all 1s ease;          
-                transition: all 1s ease;
-                color: #ffffff;
-                text-align: center;
-                cursor: pointer;
-
-            }
+    -webkit-transition: all 1s ease;                  
+    -moz-transition: all 1s ease;                 
+    -o-transition: all 1s ease;   
+    -ms-transition: all 1s ease;          
+    transition: all 1s ease;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+}
+#controls {
+    width: 157px;
+    height: 104px;
+    position:fixed;
+    z-index:99999;
+    bottom:25px;
+    right:25px;
+}
+.key {
+    height:40px;
+    width:40px;
+    float: left;
+    margin: 5px;
+    line-height: 32px;
+    text-align: center;
+}
+.key-info {
+    font-size: 8px;
+    margin-left: -15px;
+    font-family: arial;
+    margin-top: -15px;
+    position: absolute;
+}
+#a {
+    clear:left;
+}
