@@ -49,7 +49,7 @@ THREE.PointerLockControls = function ( camera ) {
 				turnLeft = true;
 				break;
 
-			case: 69: //e
+			case 69: //e
 				turnRight = true;
 				break;
 
@@ -89,7 +89,7 @@ THREE.PointerLockControls = function ( camera ) {
 				turnLeft = false;
 				break;
 
-			case: 69: //e
+			case 69: //e
 				turnRight = false;
 				break;
 
