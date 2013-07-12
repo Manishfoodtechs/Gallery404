@@ -196,26 +196,56 @@
 
                 //for ( var i = 0; i < 4; i ++ ) {
 
-                    material = new THREE.MeshPhongMaterial( { specular: 0xffffff, shading: THREE.FlatShading, vertexColors: THREE.VertexColors } );
+                  /*  material = new THREE.MeshPhongMaterial( { specular: 0xffffff, shading: THREE.FlatShading, vertexColors: THREE.VertexColors } );
 
                     var mesh = new THREE.Mesh( geometry, material );
                     mesh.position.x = 0;
                     mesh.position.y = 10;
                     mesh.position.z = -100;
+                    mesh.rotation.y = 0
 
                     var mesh2 = new THREE.Mesh( geometry, material);
                     mesh2.position.x = -80;
-                    mesh2.position.y = 10;
+                    mesh2.position.y = 0;
                     mesh2.position.z = -75;
-                    mesh2.rotation.y = 45;
+                    mesh2.rotation.y += 90;
 
                     scene.add(mesh);
                     scene.add(mesh2);
                     material.color.setHSL( Math.random() * 0.2 + 0.5, 0.75, Math.random() * 0.25 + 0.75 );
 
-                    objects.push( mesh );
+                    objects.push( mesh );*/
 
                 // }
+
+
+                //////////////////////////////////
+                //** -- JSON OBJECT LOADER -- **//
+                //////////////////////////////////
+
+                    // Note: if imported model appears too dark,
+                    //   add an ambient light in this file
+                    //   and increase values in model's exported .js file
+                    //    to e.g. "colorAmbient" : [0.75, 0.75, 0.75]
+                   var jsonLoader = new THREE.JSONLoader();
+                    jsonLoader.load( "models/koons.js", addModelToScene );
+                    // addModelToScene function is called back after model has loaded
+                    
+                    // var ambientLight = new THREE.AmbientLight([0.75, 0.75, 0.75]);
+                    // scene.add(ambientLight);
+                    
+                
+
+                function addModelToScene( geometry, materials ) 
+                {
+                    //console.log(floorMaterial);
+                    // var objectMaterial = new THREE.MeshFaceMaterial(newMaterial);
+                    var material = new THREE.MeshFaceMaterial( materials );
+                    android = new THREE.Mesh( geometry, material );
+                    android.scale.set(10,10,10);
+                    scene.add( android );
+                }
+                
 
                 
 
