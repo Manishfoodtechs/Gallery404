@@ -1,4 +1,7 @@
-            var camera, scene, renderer;
+       
+$(document).ready(function(){
+
+ var camera, scene, renderer;
             var geometry, material, mesh;
             var controls,time = Date.now();
 
@@ -233,3 +236,7 @@
                 time = Date.now();
 
             }
+
+    
+});
+           
