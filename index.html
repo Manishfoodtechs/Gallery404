@@ -180,8 +180,9 @@
                 scene.add( mesh );
 
                 // objects
-/*
-                  geometry = new THREE.CubeGeometry( 20, 20, 20 );
+
+                  geometry = new THREE.CubeGeometry( 80, 100, 5 );
+
 
                 for ( var i = 0, l = geometry.faces.length; i < l; i ++ ) {
 
@@ -193,30 +194,37 @@
 
                 }
 
-                for ( var i = 0; i < 500; i ++ ) {
+                //for ( var i = 0; i < 4; i ++ ) {
 
                     material = new THREE.MeshPhongMaterial( { specular: 0xffffff, shading: THREE.FlatShading, vertexColors: THREE.VertexColors } );
 
                     var mesh = new THREE.Mesh( geometry, material );
-                    mesh.position.x = Math.floor( Math.random() * 20 - 10 ) * 20;
-                    mesh.position.y = Math.floor( Math.random() * 20 ) * 20 + 10;
-                    mesh.position.z = Math.floor( Math.random() * 20 - 10 ) * 20;
-                    scene.add( mesh );
+                    mesh.position.x = 0;
+                    mesh.position.y = 10;
+                    mesh.position.z = -100;
 
+                    var mesh2 = new THREE.Mesh( geometry, material);
+                    mesh2.position.x = -80;
+                    mesh2.position.y = 10;
+                    mesh2.position.z = -75;
+                    mesh2.rotation.y = 45;
+
+                    scene.add(mesh);
+                    scene.add(mesh2);
                     material.color.setHSL( Math.random() * 0.2 + 0.5, 0.75, Math.random() * 0.25 + 0.75 );
 
                     objects.push( mesh );
 
-                }*/
+                // }
 
-                //
+                
 
                 renderer = new THREE.WebGLRenderer();
                 renderer.setSize( window.innerWidth, window.innerHeight );
 
                 document.body.appendChild( renderer.domElement );
 
-                //
+                
 
                 window.addEventListener( 'resize', onWindowResize, false );
 
