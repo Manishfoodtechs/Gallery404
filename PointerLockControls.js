@@ -17,6 +17,8 @@ THREE.PointerLockControls = function ( camera ) {
 	var moveBackward = false;
 	var moveLeft = false;
 	var moveRight = false;
+	var turnLeft = false;
+	var turnRight = false;
 
 	var isOnObject = false;
 	var canJump = false;
@@ -42,6 +44,14 @@ THREE.PointerLockControls = function ( camera ) {
 	var onKeyDown = function ( event ) {
 
 		switch ( event.keyCode ) {
+
+			case 81: //q
+				turnLeft = true;
+				break;
+
+			case: 69: //e
+				turnRight = true;
+				break;
 
 			case 38: // up
 			case 87: // w
@@ -74,6 +84,14 @@ THREE.PointerLockControls = function ( camera ) {
 	var onKeyUp = function ( event ) {
 
 		switch( event.keyCode ) {
+
+			case 81: //q
+				turnLeft = false;
+				break;
+
+			case: 69: //e
+				turnRight = false;
+				break;
 
 			case 38: // up
 			case 87: // w
@@ -134,6 +152,11 @@ THREE.PointerLockControls = function ( camera ) {
 
 		if ( moveLeft ) velocity.x -= 0.12 * delta;
 		if ( moveRight ) velocity.x += 0.12 * delta;
+
+
+		if ( turnLeft ) velocity.x -= 0.24 * delta;
+		if ( turnRight ) velocity.x += 0.24 * delta;
+
 
 		if ( isOnObject === true ) {
 
