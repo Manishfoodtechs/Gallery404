@@ -255,6 +255,9 @@
                     var material = new THREE.MeshLambertMaterial( { color: 0xffee00, ambient: 0x996600, envMap: refractionCube, refractionRatio: 0.95 } );
                     koons = new THREE.Mesh( geometry, material );
                     koons.scale.set(10,10,10);
+                    koons.position.x = 0;
+                    koons.position.y = 0;
+                    koons.position.z = 300;
                     scene.add( koons );
                 }
 
