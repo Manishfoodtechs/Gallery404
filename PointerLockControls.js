@@ -154,8 +154,8 @@ THREE.PointerLockControls = function ( camera ) {
 		if ( moveRight ) velocity.x += 0.12 * delta;
 
 
-		if ( turnLeft ) camera.rotation.x -= 0.24 * delta;
-		if ( turnRight ) camera.rotation.x += 0.24 * delta;
+		if ( turnLeft ) camera.rotation.y -= 0.12 * delta;
+		if ( turnRight ) camera.rotation.y += 0.12 * delta;
 
 
 		if ( isOnObject === true ) {
