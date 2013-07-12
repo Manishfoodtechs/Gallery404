@@ -16,7 +16,7 @@
 
         <div id="blocker">
             <div id="instructions">
-                <span style="font-size:46px">Welcome to Gallery 3D,<br /> <span style="font-size:28px">the world's first interactive <br />and explorable web-based 3D gallery.</span><br /> <br /><span style="font-size:18px">Click anywhere on the screen to start. </span>
+                <span style="font-size:46px"><font color="#e30bb8">Welcome to Gallery 3D,</font><br /> <span style="font-size:28px">the world's first interactive <br />and explorable web-based 3D gallery.</span><br /> <br /><span style="font-size:18px"><font color="#e30bb8">Click anywhere on the screen to start.</font> </span>
                 <br />
                 <br />
                 <span style="font-size:32px">(W, A, S, D = Move, MOUSE = Look around)</span>
@@ -175,8 +175,9 @@
 
                 }
 
-                material = new THREE.MeshBasicMaterial( { vertexColors: THREE.VertexColors } );
-
+               var material = new THREE.MeshLambertMaterial({
+        map: THREE.ImageUtils.loadTexture('textures/marble.png')
+      });
                 mesh = new THREE.Mesh( geometry, material );
                 scene.add( mesh );
 
@@ -196,26 +197,25 @@
                 }
 
                 //for ( var i = 0; i < 4; i ++ ) {
+                    geometry2 = new THREE.CubeGeometry( 120, 10, 120 );
+                    material = new THREE.MeshPhongMaterial( { specular: 0xffffff } );
 
-                  /*  material = new THREE.MeshPhongMaterial( { specular: 0xffffff, shading: THREE.FlatShading, vertexColors: THREE.VertexColors } );
-
-                    var mesh = new THREE.Mesh( geometry, material );
-                    mesh.position.x = 0;
+                    var mesh = new THREE.Mesh( geometry2, material );
+                    mesh.position.x = -10;
                     mesh.position.y = 10;
-                    mesh.position.z = -100;
+                    mesh.position.z = -190;
                     mesh.rotation.y = 0
 
                     var mesh2 = new THREE.Mesh( geometry, material);
                     mesh2.position.x = -80;
                     mesh2.position.y = 0;
                     mesh2.position.z = -75;
-                    mesh2.rotation.y += 90;
 
                     scene.add(mesh);
                     scene.add(mesh2);
-                    material.color.setHSL( Math.random() * 0.2 + 0.5, 0.75, Math.random() * 0.25 + 0.75 );
+                    
 
-                    objects.push( mesh );*/
+                    objects.push( mesh );
 
                 // }
 
@@ -224,17 +224,24 @@
                 //** -- JSON OBJECT LOADER -- **//
                 //////////////////////////////////
 
-                    // Note: if imported model appears too dark,
-                    //   add an ambient light in this file
-                    //   and increase values in model's exported .js file
-                    //    to e.g. "colorAmbient" : [0.75, 0.75, 0.75]
                    var jsonLoader = new THREE.JSONLoader();
                     jsonLoader.load( "models/koons.js", addModelToScene );
-                    // addModelToScene function is called back after model has loaded
-                    
-                    // var ambientLight = new THREE.AmbientLight([0.75, 0.75, 0.75]);
-                    // scene.add(ambientLight);
-                    
+                     jsonLoader.load( "models/gazebo.js", addModel2ToScene );
+                
+
+                function addModel2ToScene( geometry, materials ) 
+                {
+
+                   
+                    var material = new THREE.MeshPhongMaterial( { color: 0xffffff } );
+
+                    gazebo = new THREE.Mesh( geometry, material );
+                    gazebo.scale.set(10,10,10);
+                    gazebo.position.x = 0;
+                    gazebo.position.y = 195;
+                    gazebo.position.z = 300;
+                    scene.add(gazebo );
+                }
                 
 
                 function addModelToScene( geometry, materials ) 
@@ -257,7 +264,7 @@
                     koons = new THREE.Mesh( geometry, material );
                     koons.scale.set(10,10,10);
                     koons.position.x = 0;
-                    koons.position.y = 0;
+                    koons.position.y = 15;
                     koons.position.z = 300;
                     scene.add( koons );
                 }
