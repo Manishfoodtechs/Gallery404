@@ -254,7 +254,7 @@
                 refractionCube.format = THREE.RGBFormat;
                     //console.log(floorMaterial);
                     // var objectMaterial = new THREE.MeshFaceMaterial(newMaterial);
-                    var material = new THREE.MeshLambertMaterial( { color: 0xffee00, ambient: 0x996600, envMap: refractionCube, refractionRatio: 0.95 } );
+                    var material = new THREE.MeshLambertMaterial( { color: 0xffee00, ambient: 0x996600,  envMap: reflectionCube, combine: THREE.MixOperation, reflectivity: 0.3} );
                     koons = new THREE.Mesh( geometry, material );
                     koons.scale.set(10,10,10);
                     koons.position.x = 0;
