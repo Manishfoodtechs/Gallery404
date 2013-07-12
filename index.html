@@ -240,7 +240,7 @@
                 function addModelToScene( geometry, materials ) 
                 {
 
-                    var path = "/textures/cube/SwedishRoyalCastle/";
+                    var path = "textures/cube/SwedishRoyalCastle/";
                 var format = '.jpg';
                 var urls = [
                         path + 'px' + format, path + 'nx' + format,
@@ -252,8 +252,7 @@
                 reflectionCube.format = THREE.RGBFormat;
                     var refractionCube = new THREE.Texture( reflectionCube.image, new THREE.CubeRefractionMapping() );
                 refractionCube.format = THREE.RGBFormat;
-                    //console.log(floorMaterial);
-                    // var objectMaterial = new THREE.MeshFaceMaterial(newMaterial);
+
                     var material = new THREE.MeshLambertMaterial( { color: 0xffee00, ambient: 0x996600,  envMap: reflectionCube, combine: THREE.MixOperation, reflectivity: 0.3} );
                     koons = new THREE.Mesh( geometry, material );
                     koons.scale.set(10,10,10);
