@@ -175,7 +175,9 @@
 
                 }
 
-                material = new THREE.MeshBasicMaterial( { vertexColors: THREE.VertexColors } );
+                material = new THREE.MeshLambertMaterial({
+        map: THREE.ImageUtils.loadTexture('http://www.html5canvastutorials.com/demos/assets/crate.jpg')
+      });
 
                 mesh = new THREE.Mesh( geometry, material );
                 scene.add( mesh );
@@ -253,7 +255,7 @@
                     var refractionCube = new THREE.Texture( reflectionCube.image, new THREE.CubeRefractionMapping() );
                 refractionCube.format = THREE.RGBFormat;
 
-                    var material = new THREE.MeshLambertMaterial( { color: 0xffee00, ambient: 0x996600,  envMap: reflectionCube, combine: THREE.MixOperation, reflectivity: 0.5} );
+                    var material = new THREE.MeshLambertMaterial( { color: 0xffee00, ambient: 0x996600,  envMap: reflectionCube, combine: THREE.MixOperation, reflectivity: 0.75} );
                     koons = new THREE.Mesh( geometry, material );
                     koons.scale.set(10,10,10);
                     koons.position.x = 0;
