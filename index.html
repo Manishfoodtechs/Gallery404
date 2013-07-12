@@ -175,9 +175,7 @@
 
                 }
 
-                material = new THREE.MeshLambertMaterial({
-        map: THREE.ImageUtils.loadTexture('http://www.html5canvastutorials.com/demos/assets/crate.jpg')
-      });
+                material = new THREE.MeshBasicMaterial( { vertexColors: THREE.VertexColors } );
 
                 mesh = new THREE.Mesh( geometry, material );
                 scene.add( mesh );
