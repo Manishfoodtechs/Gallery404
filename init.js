@@ -1,5 +1,5 @@
        
 $(document).ready(function(){
-    $('#instructions').fadeIn('slow');
+    $('#blocker').fadeIn('slow');
 });
            
