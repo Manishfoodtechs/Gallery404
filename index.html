@@ -253,7 +253,7 @@
                     var refractionCube = new THREE.Texture( reflectionCube.image, new THREE.CubeRefractionMapping() );
                 refractionCube.format = THREE.RGBFormat;
 
-                    var material = new THREE.MeshLambertMaterial( { color: 0xffee00, ambient: 0x996600,  envMap: reflectionCube, combine: THREE.MixOperation, reflectivity: 0.3} );
+                    var material = new THREE.MeshLambertMaterial( { color: 0xffee00, ambient: 0x996600,  envMap: reflectionCube, combine: THREE.MixOperation, reflectivity: 0.9} );
                     koons = new THREE.Mesh( geometry, material );
                     koons.scale.set(10,10,10);
                     koons.position.x = 0;
