@@ -1,0 +1,609 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"map",
+				"mapWindow"
+			],
+			[
+				"eas",
+				"ease-in-out"
+			],
+			[
+				"mobile",
+				"mobile-menu-button"
+			],
+			[
+				"endGame",
+				"endGameDivWrapper"
+			],
+			[
+				"background-",
+				"background-color"
+			],
+			[
+				"rules",
+				"rulesDivReturn"
+			],
+			[
+				"star",
+				"startMenuSettingsBackground"
+			],
+			[
+				"ru",
+				"rulesDivClass"
+			],
+			[
+				"rul",
+				"rulesTextStyling"
+			],
+			[
+				"fizz",
+				"fizzButton1"
+			],
+			[
+				"onEvent",
+				"onEventAnimation"
+			],
+			[
+				"main",
+				"mainGameSettingsBackground"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"block",
+				"inline-block"
+			],
+			[
+				"total",
+				"totalCount"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"HI",
+				"HIDING"
+			],
+			[
+				"color",
+				"colorArray"
+			],
+			[
+				"xSpee",
+				"XSpeed"
+			],
+			[
+				"paddl",
+				"paddleBYBottom"
+			],
+			[
+				"dire",
+				"directionY"
+			],
+			[
+				"paddle",
+				"paddleB"
+			],
+			[
+				"paddleY",
+				"paddleAYTop"
+			],
+			[
+				"direction",
+				"directionX"
+			],
+			[
+				"x",
+				"x"
+			],
+			[
+				"playground",
+				"playgroundHeight"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"game",
+				"gameHistory"
+			],
+			[
+				"re",
+				"resetGame"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"hel",
+				"helloStatus"
+			],
+			[
+				"clickHandler",
+				"clickHandlerBegin"
+			],
+			[
+				"clic",
+				"clickHandlerTwo"
+			],
+			[
+				"cl",
+				"click"
+			],
+			[
+				"button",
+				"buttonTwo"
+			],
+			[
+				"mo",
+				"monsterColumn"
+			],
+			[
+				"Pirate",
+				"pirate"
+			],
+			[
+				"ship",
+				"shipStrength"
+			],
+			[
+				"SHIP",
+				"SHIP"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"Visualizing",
+				"Visualizing2DArrays"
+			],
+			[
+				"s",
+				"script"
+			],
+			[
+				"wikiframe",
+				"wikiframe_veil"
+			],
+			[
+				"i",
+				"iframe"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/mannypalou/Gallery3D/index.html",
+		"/Users/mannypalou/Gallery3D/OBJMTLLoader.js",
+		"/Users/mannypalou/Desktop/Drupal 404/css/style.css",
+		"/Users/mannypalou/Desktop/Drupal 404/templates/page--node.tpl.php",
+		"/Users/mannypalou/Desktop/Drupal 404/skeletontheme.info",
+		"/Users/mannypalou/Desktop/Drupal 404/js/dimensions.js",
+		"/Users/mannypalou/Desktop/Drupal 404/templates/node-product_display.tpl.php",
+		"/Users/mannypalou/Desktop/Drupal 404/templates/page.tpl.php",
+		"/Users/mannypalou/Desktop/Drupal 404/templates/node.tpl.php",
+		"/Users/mannypalou/server.js",
+		"/Users/mannypalou/hack-custom/sites/all/themes/hackerati/html.tpl.php",
+		"/Users/mannypalou/hack-custom/sites/all/themes/hackerati/page--node--40.tpl.php",
+		"/Users/mannypalou/hack-custom/sites/all/themes/hackerati/page--node--15.tpl.php",
+		"/Users/mannypalou/hack-custom/sites/all/themes/hackerati/js/slider.js",
+		"/Users/mannypalou/hack-custom/sites/all/themes/hackerati/page--front.tpl.php",
+		"/Users/mannypalou/hack-custom/sites/all/themes/hackerati/page--node--16.tpl.php",
+		"/Users/mannypalou/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/mannypalou/hack-custom/sites/all/themes/hackerati/hackerati.info",
+		"/Users/mannypalou/hack-custom/sites/all/themes/hackerati/js/spinCarousel.js",
+		"/Users/mannypalou/hack-custom/sites/all/themes/hackerati/page--node--17.tpl.php",
+		"/Users/mannypalou/hack-custom/sites/all/themes/hackerati/css/media.css",
+		"/Users/mannypalou/hack-custom/sites/all/themes/hackerati/css/style.css",
+		"/Users/mannypalou/hack-custom/sites/all/themes/hackerati/js/hackerati.js",
+		"/Users/mannypalou/hack-custom/sites/all/themes/hackerati/js/keypress.js",
+		"/Users/mannypalou/hack-custom/sites/all/themes/hackerati/js/rollover.js",
+		"/Users/mannypalou/hack-custom/sites/all/themes/hackerati/js/jquery.tweet.js",
+		"/Users/mannypalou/hack-custom/sites/all/themes/hackerati/js/dimensions.js",
+		"/Users/mannypalou/hack-custom/sites/all/themes/hackerati/js/jquery.min.js",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/Pixel Hero/pixelHero.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/Pixel Hero/pixelHero.css",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/Pixel Hero/pixelHero.js",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/Web-Apps/WebGl/Example1/webGL_example1.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/FizzBuzz/fizzBuzz2.js",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/FizzBuzz/fizzBuzz.css",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/FizzBuzz/fizzBuzz.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/rockPaperScissors/rockPaperScissors.js",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/rockPaperScissors/rockPaperScissors.css",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/rockPaperScissors/rockPaperScissors.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/Web-Apps/CSSAnimations/example2/cssAnimationExample3.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/Web-Apps/CSSAnimations/example2/example3/cssAnimationExample3.css",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/Web-Apps/CSSAnimations/example1/cssAnimationExample1.css",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/Math_Utilities/pointCollision/pointCollision.js",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/Math_Utilities/pointCollision/pointCollision.css",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/Math_Utilities/pointCollision/pointCollision.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/Math_Utilities/startingGrid()/startingGrid.js",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/Math_Utilities/startingGrid()/startingGrid.css",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/Math_Utilities/startingGrid()/startingGrid.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/Math_Utilities/Grid()/startingGrid()/startingGrid().html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/Math_Utilities/Grid()/grid.js",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/Math_Utilities/Grid()/grid.css",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/Math_Utilities/Grid()/grid.html",
+		"/Users/moisessanabria/Desktop/server3.js",
+		"/Users/moisessanabria/Desktop/server.js",
+		"/Users/moisessanabria/Desktop/server2.js",
+		"/Users/moisessanabria/Desktop/response/server.js",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/Web-Apps/randomComposition()/randomComposition.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/Web-Apps/randomComposition()/randomComposition.js",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/Web-Apps/randomComposition()/randomComposition.css",
+		"/Users/moisessanabria/Desktop/script.js",
+		"/Users/moisessanabria/Desktop/randomComposition()/randomComposition.html",
+		"/Users/moisessanabria/Desktop/randomComposition()/randomComposition.css",
+		"/Users/moisessanabria/Desktop/randomComposition()/randomComposition.js",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/FizzBuzz/fizzBuzz.js",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/ParticleGenerator/particleGenerator.html",
+		"/Users/moisessanabria/Desktop/Developer/Programming Sort/The Actually Useful Programming Library - Books (Feb 2012)/HTML - CSS/HTML5 Canvas Cookbook - Rowell - Packt (2011)/1369EXP_Code/1369_08_code/Player.js",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/Canvas Hero/canvasHero.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/Canvas Hero/canvasHero.css",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/Canvas Hero/canvasHero.js",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/ParticleGenerator/particleGenerator.css",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/ParticleGenerator/particleGenerator.js",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/Monster Smash/monsterMash.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/Monster Smash/monsterMash.css",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/Monster Smash/monsterMash.js",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/Ping-Pong/pingPong.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/Web-Apps/Date()/date.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/Web-Apps/Date()/date.css",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/Web-Apps/Date()/date.js",
+		"/Users/moisessanabria/Desktop/Date()/date.html",
+		"/Users/moisessanabria/Desktop/Date()/date.css",
+		"/Users/moisessanabria/Desktop/Date()/date.js",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/Ping-Pong/pingPong.css",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/Ping-Pong/pingPong.js",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/TicTacToe/TicTacToe_Mobile/tictactoe.js",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/TicTacToe/TicTacToe_Mobile/tictactoe.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/TicTacToe/TicTacToe_Mobile/tictactoe.css",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/TicTacToe/tictactoe.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/TicTacToe/tictactoe.css",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/TicTacToe/tictactoe.js",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/Ping-Pong/jquery1.9.js",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/Hangman/hangman.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/Hangman/hangman.js",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/Hangman/hangman.css",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/ForestOfLyrica/ForestOfLyrica.js",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/moises404.github.com/index.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/moises404.github.com/art404.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/moises404.github.com/aviary.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/moises404.github.com/flyers.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/moises404.github.com/isometricWeb.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/moises404.github.com/timeline.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/moises404.github.com/mozaicZoom.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/moises404.github.com/about.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/moises404.github.com/logo.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/index.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/moises404.github.com/css/stylesheet.css",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/ForestOfLyrica/ForestOfLyrica.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/games/ForestOfLyrica/ForestOfLyrica.css",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/TicTacToe/tictactoe.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/HTML5-Javascript-Games/TicTacToe/tictactoe.js",
+		"/Users/moisessanabria/Desktop/tictactoe2.html",
+		"/Users/moisessanabria/Desktop/tictactoe.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/moises404.github.com/viralFootPrint.html",
+		"/Users/moisessanabria/Desktop/Interactive Design/Github/moises404.github.com/godsbeer.html",
+		"/Users/moisessanabria/Desktop/howWeDoIt/howWeDoIt.html",
+		"/Users/moisessanabria/Desktop/howWeDoIt/howWeDoIt.css",
+		"/Users/moisessanabria/Desktop/howWeDoIt/howWeDoIt.js",
+		"/Users/moisessanabria/Desktop/mixpanel/mixpanel.html",
+		"/Users/moisessanabria/Desktop/HTML Game Development/MyGames/IslandAdventure/IslandAdventure.css",
+		"/Users/moisessanabria/Desktop/HTML Game Development/MyGames/IslandAdventure/IslandAdventure.html",
+		"/Users/moisessanabria/Desktop/HTML Game Development/MyGames/IslandAdventure/IslandAdventure.js",
+		"/Users/moisessanabria/Desktop/HTML Game Development/MyGames/Visualizing2DArrays/Visualizing2DArrays.html",
+		"/Users/moisessanabria/Desktop/HTML Game Development/MyGames/Visualizing2DArrays/Visualizing2DArrays.js",
+		"/Users/moisessanabria/Desktop/HTML Game Development/MyGames/Visualizing2DArrays/Visualizing2DArrays.css",
+		"/Users/moisessanabria/Documents/Lanscape/Twitter Aviary/our_script.js",
+		"/Users/moisessanabria/Documents/Lanscape/Twitter Aviary/raphael.js",
+		"/Users/moisessanabria/Documents/Lanscape/Twitter Aviary/index.html",
+		"/Users/moisessanabria/Documents/Lanscape/Twitter Aviary/WikiLookUp.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"node-15",
+			"background:",
+			"infoWindow",
+			"cooper",
+			":hover",
+			"projects-wra",
+			"image-block-right",
+			"image-block-",
+			"#wrapper-contact",
+			"column-1",
+			"wrapper-columns",
+			"M",
+			"all",
+			"'Monaco'",
+			"\"Monaco\"",
+			"inline",
+			"#about-benefits",
+			"p.small",
+			"h1.big",
+			"leadershi",
+			"#content",
+			"overflow",
+			"#meet ",
+			"details",
+			"gear-wra",
+			"p",
+			"content",
+			"quotes",
+			"#4e68c7",
+			"mob",
+			"1-side",
+			"2-side",
+			"3-side",
+			"4-side",
+			"5-side",
+			"4-side",
+			"3-side",
+			"2-side",
+			"1-side",
+			"contact-side",
+			"mission-side",
+			"process-side",
+			"help-side",
+			"meet-side",
+			"home-side",
+			"contact-side",
+			"mission-side",
+			"process-side",
+			"help-side",
+			"meet-side",
+			"home-side",
+			"box-shadow",
+			"splash",
+			"timer",
+			"endGameHandler",
+			"currentFizzBuzzNumber",
+			"endGameMainMenu",
+			"startGame",
+			"keydown",
+			"rules",
+			"addEventListener",
+			"startHandler",
+			"rulesDiv",
+			"currentFizzBuzz",
+			"currentFizz",
+			"background-image",
+			"background",
+			"color",
+			"settings",
+			"current",
+			"font-family:",
+			"z",
+			"settings",
+			"color",
+			"ruleDivRe",
+			"color",
+			"rules",
+			"startMenu",
+			"addEventListener",
+			"startMenuSettingsBackground",
+			"leave",
+			"rules",
+			"black",
+			"background",
+			"rulesDiv",
+			"rules",
+			"button",
+			"rulesDiv",
+			"font-size",
+			"em",
+			"display",
+			"css",
+			"rules",
+			"rulesHandler",
+			"rules",
+			"rulesDiv",
+			"rules",
+			"button",
+			"keydow",
+			"resume",
+			"settings",
+			"resume",
+			"fizzButton1",
+			"fizzBuzz1",
+			"fizzBuzz",
+			"-14",
+			"144px",
+			"text-align",
+			"fizzHa",
+			"scorePl",
+			"backgroun",
+			"text",
+			"font",
+			"Bubble",
+			"animation",
+			"img",
+			"style",
+			"center",
+			"bubble",
+			"tmp",
+			"backgroun",
+			"cloudBase",
+			"world",
+			"generate",
+			"options",
+			"optionsContent",
+			"options",
+			"addEventListener"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"H",
+			"\"Inconsolata\"",
+			"side-1",
+			"side-2",
+			"side-3",
+			"side-4",
+			"side-5",
+			"side-4",
+			"side-3",
+			"side-2",
+			"side-1",
+			"5-side",
+			"4-side",
+			"3-side",
+			"2-side",
+			"1-side",
+			"splash-side",
+			"5-side",
+			"4-side",
+			"3-side",
+			"2-side",
+			"1-side",
+			"splash-side"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/moisessanabria/Desktop/tictactoe.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
