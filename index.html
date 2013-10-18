@@ -15,18 +15,56 @@
         <script src="loaders/OBJMTLLoader.js"></script>
         <script src="loaders/MTLLoader.js"></script>
         <script src="loaders/ColladaLoader.js"></script>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     </head>
 
     <body>
 
 
         <div id="blocker">
-            <div id="instructions">
-                <span style="font-size:46px">Welcome to <font color="#e30bb7">Gallery 404,</font><br /> <span style="font-size:28px">A fully interactive, explorable,<br />web-based 3D art gallery.</span><br /> <br /><span style="font-size:18px">Click anywhere on the screen to start.<br/>(W, A, S, D, E, Q = Move, MOUSE = Look) </span>
-                <br />
-                <br />
+
+
+            <div id="leftPanel">
+              <div id="leftWrapper">
+              <div id="intro">
+              <img src="textures/logo.png" />
+              <p>The world’s first completely interactive, browser-based, open source 3D art gallery.</p>
+              </div>
+              <div id="instructions">
+                <h2> To explore:</h2>
+                  <div class="click">
+                    <img src="textures/click.svg" /> <p> Click anywhere on the screen to start </p>
+                  </div>
+                  <div class="keyboard">
+                    <img src="textures/keyboard.svg" /> <p> Use keyboard to move </p>
+                  </div>
+                  <div class="mouse">
+                    <img src="textures/mouse.svg" /> <p> Use mouse to look </p>
+                  </div>
+                <h2> To create:</h2>
+                  <div class="create">
+                    <img src="textures/github.svg" /><p> Fork us on GitHub </p>
+                  </div>
+              </div>
+
+              <div id="credits">
+                  <p>GALLERY404 is built with webGL using mr.doob’s <a href="http://www.threejs.org" target="_blank">three.js</a> with 3D models sourced from the internet.<br/><br/>All inquiries can be sent to info@art404.com</p>
+              </div>
             </div>
+            </div>
+
+            <div id="rightPanel">
+              <h2> Current Show: </h2>
+              <h1> The Classics </h1>
+              <p>The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics </p>
+            </div>
+
+
+
         </div>
+
+
+
         <div id ="controls">
             <div id="q" class="key">Q<br /><span class="key-info">Turn Left</span></div><div id="w" class="key">W<br /><span class="key-info">Forward</span></div><div id="e" class="key">E<br /><span class="key-info">Turn Right</span></div> <br />
             <div id="a" class="key">A<br /><span class="key-info">Move Left</span></div><div id="s" class="key">S<br /><span class="key-info">Backwards</span></div><div id="d" class="key">D<br /><span class="key-info">Move Right</span></div>
@@ -45,7 +83,7 @@
             var objects = [];
             var ray;
             var blocker = document.getElementById( 'blocker' );
-            var instructions = document.getElementById( 'instructions' );
+            var instructions = document.getElementById( 'blocker' );
             var havePointerLock = 'pointerLockElement' in document || 'mozPointerLockElement' in document || 'webkitPointerLockElement' in document;
             if ( havePointerLock ) {
                 var element = document.body;
@@ -122,13 +160,14 @@
                 geometry = new THREE.PlaneGeometry( 1250, 1250, 100, 100 );
                 geometry.applyMatrix( new THREE.Matrix4().makeRotationX( - Math.PI / 2 ) );
 
+
                 var material = new THREE.MeshLambertMaterial({
                 map: THREE.ImageUtils.loadTexture('textures/marble.png')
                 });
                 mesh = new THREE.Mesh( geometry, material );
                 scene.add( mesh );
-
                               
+
                                 /////////////////////////////////
                                 //** -- ART OBJECT MODELS -- **//
                                 /////////////////////////////////
@@ -454,7 +493,7 @@
 
 
 
-                //------------------- KOONS DOG -----------------//
+
 
                 var jsonLoader = new THREE.JSONLoader();
                 jsonLoader.load( "models/koons.js", addModelToScene );
@@ -563,35 +602,149 @@
                 krugerWall.position.y = 300;
                 krugerWall.position.x = 435;
                 krugerWall.position.z = 500;
-                krugerWall.rotation.y = -125  
-
-                setTimeout(function(){
-                    var krugerMaterials = [
-                        new THREE.MeshBasicMaterial( { } ),
-                        new THREE.MeshBasicMaterial( { } ),
-                        new THREE.MeshBasicMaterial( { } ),
-                        new THREE.MeshBasicMaterial( { } ),
-                        new THREE.MeshLambertMaterial({ }),
-                        new THREE.MeshBasicMaterial( { 
-                            ambient: 0xffffff,
-                            map: THREE.ImageUtils.loadTexture( 'textures/kruger2.png' )} )
-                        ];                  
-                },10000);
+                krugerWall.rotation.y = -125; 
 
 
-                // var loader = new THREE.OBJMTLLoader();
-                // loader.addEventListener( 'load', function ( event ) {
-                //     var object = event.content;
-                //     object.position.y =  0;
-                //     object.position.x = 200;
-                //     scene.add( object );
-                // });
-                // loader.load( 'models/male02.obj', 'models/male02.mtl' );
-                }
+                var krugerMaterials2 = [
+                new THREE.MeshBasicMaterial( { } ),
+                new THREE.MeshBasicMaterial( { } ),
+                new THREE.MeshBasicMaterial( { } ),
+                new THREE.MeshBasicMaterial( { } ),
+                new THREE.MeshLambertMaterial({ }),
+                new THREE.MeshBasicMaterial( { 
+                    ambient: 0xffffff,
+                    map: THREE.ImageUtils.loadTexture( 'textures/kruger2.png' )} )
+                ];
+
+                krugerWall2 = new THREE.Mesh(
+                new THREE.CubeGeometry( 400, 600, 20),
+                new THREE.MeshFaceMaterial( krugerMaterials2 ) );
+                krugerWall2.position.y = 300;
+                krugerWall2.position.x = 435;
+                krugerWall2.position.z = 500;
+                krugerWall2.rotation.y = -125;
+
+                var krugerMaterials3 = [
+                new THREE.MeshBasicMaterial( { } ),
+                new THREE.MeshBasicMaterial( { } ),
+                new THREE.MeshBasicMaterial( { } ),
+                new THREE.MeshBasicMaterial( { } ),
+                new THREE.MeshLambertMaterial({ }),
+                new THREE.MeshBasicMaterial( { 
+                    ambient: 0xffffff,
+                    map: THREE.ImageUtils.loadTexture( 'textures/kruger3.png' )} )
+                ];
+
+                krugerWall3 = new THREE.Mesh(
+                new THREE.CubeGeometry( 400, 600, 20),
+                new THREE.MeshFaceMaterial( krugerMaterials3 ) );
+                krugerWall3.position.y = 300;
+                krugerWall3.position.x = 435;
+                krugerWall3.position.z = 500;
+                krugerWall3.rotation.y = -125;
+
+                var krugerMaterials4 = [
+                new THREE.MeshBasicMaterial( { } ),
+                new THREE.MeshBasicMaterial( { } ),
+                new THREE.MeshBasicMaterial( { } ),
+                new THREE.MeshBasicMaterial( { } ),
+                new THREE.MeshLambertMaterial({ }),
+                new THREE.MeshBasicMaterial( { 
+                    ambient: 0xffffff,
+                    map: THREE.ImageUtils.loadTexture( 'textures/kruger4.png' )} )
+                ];
+
+                krugerWall4 = new THREE.Mesh(
+                new THREE.CubeGeometry( 400, 600, 20),
+                new THREE.MeshFaceMaterial( krugerMaterials4 ) );
+                krugerWall4.position.y = 300;
+                krugerWall4.position.x = 435;
+                krugerWall4.position.z = 500;
+                krugerWall4.rotation.y = -125;
+
+
+                var krugerMaterials5 = [
+                new THREE.MeshBasicMaterial( { } ),
+                new THREE.MeshBasicMaterial( { } ),
+                new THREE.MeshBasicMaterial( { } ),
+                new THREE.MeshBasicMaterial( { } ),
+                new THREE.MeshLambertMaterial({ }),
+                new THREE.MeshBasicMaterial( { 
+                    ambient: 0xffffff,
+                    map: THREE.ImageUtils.loadTexture( 'textures/kruger5.png' )} )
+                ];
+
+                krugerWall5 = new THREE.Mesh(
+                new THREE.CubeGeometry( 400, 600, 20),
+                new THREE.MeshFaceMaterial( krugerMaterials5 ) );
+                krugerWall5.position.y = 300;
+                krugerWall5.position.x = 435;
+                krugerWall5.position.z = 500;
+                krugerWall5.rotation.y = -125;
+
+                var krugerMaterials6 = [
+                new THREE.MeshBasicMaterial( { } ),
+                new THREE.MeshBasicMaterial( { } ),
+                new THREE.MeshBasicMaterial( { } ),
+                new THREE.MeshBasicMaterial( { } ),
+                new THREE.MeshLambertMaterial({ }),
+                new THREE.MeshBasicMaterial( { 
+                    ambient: 0xffffff,
+                    map: THREE.ImageUtils.loadTexture( 'textures/kruger6.png' )} )
+                ];
+
+                krugerWall6 = new THREE.Mesh(
+                new THREE.CubeGeometry( 400, 600, 20),
+                new THREE.MeshFaceMaterial( krugerMaterials6 ) );
+                krugerWall6.position.y = 300;
+                krugerWall6.position.x = 435;
+                krugerWall6.position.z = 500;
+                krugerWall6.rotation.y = -125;
+       
+            function startTimer() {
+                barbTimer = setInterval(barbAnimation, 0250); 
+            }
+
+            function barbAnimation() {
+                  if ( currentWall === 0 ) {
+                    scene.remove( krugerWall6 )
+                    scene.add( krugerWall );
+                    currentWall++;
+                  }   
+                  else if ( currentWall === 1 ) {
+                    scene.remove( krugerWall6 )
+                    scene.remove( krugerWall );
+                    scene.add( krugerWall2 );
+                    currentWall++;
+                  }             
+                  else if ( currentWall === 2 ) {
+                    scene.remove( krugerWall2 );
+                    scene.add( krugerWall3 );
+                    currentWall++;
+                  }  
+                  else if ( currentWall === 3 ) {
+                    scene.remove( krugerWall3 );
+                    scene.add( krugerWall4 );
+                    currentWall++;
+                  }  
+                  else if ( currentWall === 4 ) {
+                    scene.remove( krugerWall4 );
+                    scene.add( krugerWall5 );
+                    currentWall++;
+                  }
+                   else if ( currentWall === 5 ) {
+                    scene.remove( krugerWall5 );
+                    scene.add( krugerWall6 );
+                    window.currentWall = 0;
+                  }  
+              }
+              currentWall = 1;
+              startTimer();
+              }
 
 
                 //////////////////////////////
-                //2** --    ANIMATION --   **//
+                //** --    ANIMATION --   **//
                 //////////////////////////////
 
 

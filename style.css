@@ -6,9 +6,22 @@
          url('fonts/gotham-bold.ttf') format('truetype'),
          url('fonts/gotham-bold.svg#GothamBold') format('svg');
 }
+@font-face {
+    font-family: 'GothamLight';
+    src: url('fonts/gotham-light.eot');
+    src: url('fonts/gotham-light.eot') format('embedded-opentype'),
+         url('fonts/gotham-light.woff') format('woff'),
+         url('fonts/gotham-light.ttf') format('truetype'),
+         url('fonts/gotham-light.svg#GothamLight') format('svg');
+}
+
 html, body {
     width: 100%;
     height: 100%;
+}
+
+h1 {
+    margin-top:0px;
 }
 body {
     background-color: #ffffff;
@@ -16,43 +29,89 @@ body {
     overflow: hidden;
     font-family: 'GothamBold';
 }
+
 #blocker {
     position: absolute;
     display:none;
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.75);
+    overflow:hidden;
 }
-#instructions {
-    width: 60%;
-    line-height:1.4em;
-    margin:-50px auto 0 auto;
+
+#leftPanel {
+    cursor:pointer;
+    width:30%;
+    padding:25px;
+    color:white;
+    border-right:1px dotted white;
+    height:100%;
+    background-image:url(textures/leftPattern.png);
+    float:left;
+    display:inline-block;
+    display:table;
+}
+
+#leftWrapper {
+    display:table-cell;
+    height:auto;
+    vertical-align:middle;
+}
+
+#rightPanel {
+    display: inline-block;
+    width: 63%;
+    float:right;
+    overflow-y: scroll;
     height: 100%;
-    letter-spacing: -1px;
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
 
-    -webkit-box-orient: horizontal;
-    -moz-box-orient: horizontal;
-    box-orient: horizontal;
+}
 
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    box-pack: center;
+#rightPanel h1 {
+    margin-top:0;
+}
 
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    box-align: center;
+#rightPanel h2 {
+    margin-bottom:0;
+    font-size:.9em;
+}
 
-    -webkit-transition: all 1s ease;                  
-    -moz-transition: all 1s ease;                 
-    -o-transition: all 1s ease;   
-    -ms-transition: all 1s ease;          
-    transition: all 1s ease;
-    color: #ffffff;
-    text-align: center;
-    cursor: pointer;
+#intro p {
+    font-size:1.5em;
+}
+
+#intro img {
+    width:350px;
+}
+
+#instructions h2 {
+    font-size:1.2em;
+}
+
+#instructions p {
+    display:inline;
+    top: -20px;
+    left: 10px;
+    position: relative;
+    font-family:"GothamLight";
+}
+
+#instructions img {
+    width:50px;
+}
+
+#instructions h2:first-child {
+    color:#fd70fc;
+}
+#instructions h2 {
+    color:#fbe232;
+}
+#credits p {
+    font-size:.7em;
+    font-family:helvetica,arial,sans-serif;
+}
+#credits a {
+    color:white;
 }
 #controls {
     width: 157px;
