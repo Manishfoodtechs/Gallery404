@@ -203,6 +203,30 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 28598,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "untitled.js",
+			"settings":
+			{
+				"buffer_size": 3230,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "PointerLockControls.js",
+			"settings":
+			{
+				"buffer_size": 3247,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -228,8 +252,18 @@
 	},
 	"file_history":
 	[
+		"/Users/mannypalou/Gallery3D/indextatlin.html",
 		"/Users/mannypalou/Gallery3D/index.html",
+		"/Users/mannypalou/Gallery3D/index copy.html",
+		"/Users/mannypalou/Gallery3D/PointerLockControls.js",
+		"/Users/mannypalou/Gallery3D/indexRay.html",
+		"/Users/mannypalou/Gallery3D/init.js",
+		"/Users/mannypalou/Gallery3D/jquery.min.js",
+		"/Users/mannypalou/Gallery3D/MTLLoader.js",
 		"/Users/mannypalou/Gallery3D/OBJMTLLoader.js",
+		"/Users/mannypalou/Gallery3D/TrackballControls.js",
+		"/Users/mannypalou/Gallery3D/webgl_loader_obj_mtl.html",
+		"/Users/mannypalou/Gallery3D/three.min.js",
 		"/Users/mannypalou/Desktop/Drupal 404/css/style.css",
 		"/Users/mannypalou/Desktop/Drupal 404/templates/page--node.tpl.php",
 		"/Users/mannypalou/Desktop/Drupal 404/skeletontheme.info",
@@ -345,15 +379,7 @@
 		"/Users/moisessanabria/Desktop/howWeDoIt/howWeDoIt.js",
 		"/Users/moisessanabria/Desktop/mixpanel/mixpanel.html",
 		"/Users/moisessanabria/Desktop/HTML Game Development/MyGames/IslandAdventure/IslandAdventure.css",
-		"/Users/moisessanabria/Desktop/HTML Game Development/MyGames/IslandAdventure/IslandAdventure.html",
-		"/Users/moisessanabria/Desktop/HTML Game Development/MyGames/IslandAdventure/IslandAdventure.js",
-		"/Users/moisessanabria/Desktop/HTML Game Development/MyGames/Visualizing2DArrays/Visualizing2DArrays.html",
-		"/Users/moisessanabria/Desktop/HTML Game Development/MyGames/Visualizing2DArrays/Visualizing2DArrays.js",
-		"/Users/moisessanabria/Desktop/HTML Game Development/MyGames/Visualizing2DArrays/Visualizing2DArrays.css",
-		"/Users/moisessanabria/Documents/Lanscape/Twitter Aviary/our_script.js",
-		"/Users/moisessanabria/Documents/Lanscape/Twitter Aviary/raphael.js",
-		"/Users/moisessanabria/Documents/Lanscape/Twitter Aviary/index.html",
-		"/Users/moisessanabria/Documents/Lanscape/Twitter Aviary/WikiLookUp.js"
+		"/Users/moisessanabria/Desktop/HTML Game Development/MyGames/IslandAdventure/IslandAdventure.html"
 	],
 	"find":
 	{
@@ -371,6 +397,27 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"label",
+			"20,20",
+			"Lambert",
+			"objects",
+			"ray",
+			"lambertmateri",
+			"objects",
+			"koons",
+			"ray",
+			"controls",
+			"THREE.mesh",
+			"objects",
+			"ray",
+			"objects",
+			"RAY",
+			"ray",
+			"geometry2",
+			"new THREE.MeshPhongMaterial( { specular: 0xffffff } )",
+			"10",
+			"dice",
+			"mesh2",
 			"node-15",
 			"background:",
 			"infoWindow",
@@ -477,28 +524,7 @@
 			"fizzBuzz1",
 			"fizzBuzz",
 			"-14",
-			"144px",
-			"text-align",
-			"fizzHa",
-			"scorePl",
-			"backgroun",
-			"text",
-			"font",
-			"Bubble",
-			"animation",
-			"img",
-			"style",
-			"center",
-			"bubble",
-			"tmp",
-			"backgroun",
-			"cloudBase",
-			"world",
-			"generate",
-			"options",
-			"optionsContent",
-			"options",
-			"addEventListener"
+			"144px"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -506,6 +532,10 @@
 		"regex": false,
 		"replace_history":
 		[
+			"koonsPlatform",
+			"new THREE.MeshBasicMaterial( {} )",
+			"koonsLabel",
+			"meshKoonsLabel",
 			"H",
 			"\"Inconsolata\"",
 			"side-1",
@@ -539,8 +569,91 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 28598,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								917,
+								923
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 103.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "untitled.js",
+					"settings":
+					{
+						"buffer_size": 3230,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								3230
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 936.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "PointerLockControls.js",
+					"settings":
+					{
+						"buffer_size": 3247,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								82,
+								82
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 639.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
