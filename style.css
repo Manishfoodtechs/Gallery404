@@ -61,7 +61,7 @@ body {
 
 #leftPanel {
     cursor:pointer;
-    width:30%;
+    width:33%;
     padding:25px;
     color:white;
     height:100%;
@@ -82,7 +82,7 @@ body {
 }
 
 #intro img {
-    width:350px;
+    width:300px;
 }
 
 #instructions h2 {
@@ -92,33 +92,86 @@ body {
 
 #instructions p {
     display:inline;
-    top: -20px;
-    left: 10px;
+    top: -42px;
+    left: 53px;
     position: relative;
     font-family:"GothamLight";
-    font-size:.9em;
+    font-size:.8em;
+    max-width:50px;
 }
 
 #instructions img {
-    width:50px;
+    width:45px;
+    display:block;
 }
 
 #instructions h2:first-child {
     color:#fd70fc;
 }
-#instructions h2 {
+#createWrapper h2 {
     color:#fbe232;
 }
+
+#instructions .github {
+    width:100px;
+}
+
+#instructions p.fork a {
+    color:white;
+    text-decoration:none;
+}
+
+#instructions p.fork {
+    top:-80px;
+    left:100px;
+    font-size:1.6em;
+}
+
+#instructions .create img {
+    width:100px;
+    position:relative;
+}
+
+#instructions .create p {
+    display:block;
+    max-width:none;
+    width:100%;
+    font-size:1.5em;
+    left: 100px;
+    top: -100px;
+}
+
 #credits p {
     font-size:.7em;
     font-family:helvetica,arial,sans-serif;
+    margin-top:-40px;
 }
 #credits a {
     color:white;
 }
 
+#createWrapper {
+    clear:left;
+    height:auto;
+}
+.click, .keyboard, .mouse , .jump, .esc, .screenshot {
+    display: inline-block;
+    width:50%;
+    height: 60px;
+    float: left;
+}
+
+a.ghlink {
+    color:white;
+    text-decoration:none;
+}
+
+a.ghlink:hover {
+    color:#fbe232;
+}
+
 #rightPanel {
-    display: table;
+    display: block;
     width: auto;
     overflow-y: scroll;
     height: 100%;
@@ -141,6 +194,23 @@ body {
 
 #rightPanel img {
     width:20%;
+    clear: both;
+    float: left;
+}
+
+#rightPanel h2 {
+    display:block;
+    width:100%;
+    font-size:2em;
+    text-align: center;
+}
+
+.artist {
+    margin:55px 0;
+}
+
+#koons.artist {
+    margin-top:0;
 }
 
 #controls {
