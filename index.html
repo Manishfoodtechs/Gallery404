@@ -5,17 +5,18 @@
         <meta charset="utf-8">
         <title>Gallery 404</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="jquery.min.js"></script>
-        <script src="init.js"></script>
-        <script src="ParticleEngine.js"></script>
-        <script src="ParticleEngineExamples.js"></script>
-        <script src="three.min.js"></script>
-        <script src="PointerLockControls.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/Detector.js"></script>
+        <script src="js/three.min.js"></script>
+        <script src="js/THREEx.screenshot.js"></script>
+        <script src="js/GeometryUtils.js"></script>
+        <script src="js/PointerLockControls.js"></script>
         <script src="loaders/BinaryLoader.js"></script>
         <script src="loaders/OBJMTLLoader.js"></script>
+        <script src="loaders/OBJLoader.js"></script>
         <script src="loaders/MTLLoader.js"></script>
         <script src="loaders/ColladaLoader.js"></script>
-        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     </head>
 
     <body>
@@ -28,7 +29,7 @@
               <div id="leftWrapper">
               <div id="intro">
               <img src="textures/logo.png" />
-              <p>The world’s first completely interactive, browser-based, open source 3D art gallery.</p>
+              <p>The world’s first browser-based, open source 3D art gallery.</p>
               </div>
               <div id="instructions">
                 <h2> To explore:</h2>
@@ -36,10 +37,10 @@
                     <img src="textures/click.svg" /> <p> Click anywhere on the screen to start </p>
                   </div>
                   <div class="keyboard">
-                    <img src="textures/keyboard.svg" /> <p> Use keyboard to move </p>
+                    <img src="textures/keyboard.svg" /> <p> Use your keyboard to move </p>
                   </div>
                   <div class="mouse">
-                    <img src="textures/mouse.svg" /> <p> Use mouse to look </p>
+                    <img src="textures/mouse.svg" /> <p> Use your mouse to look </p>
                   </div>
                 <h2> To create:</h2>
                   <div class="create">
@@ -55,8 +56,23 @@
 
             <div id="rightPanel">
               <h2> Current Show: </h2>
-              <h1> The Classics </h1>
-              <p>The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics The Classics </p>
+              <h1> Classics </h1>
+              <img src="textures/koonsheadspin.gif"/><img src="textures/whiteheadspin.gif"/><img src="textures/warholheadspin.gif"/><img src="textures/krugerheadspin.gif"/><img src="textures/brancusiheadspin.gif"/>
+              <p>Guccivuitton is pleased to announce our inaugural exhibition, IRL (In Real Life) by the art and design collaborative ART404.
+              Working within a Post-Internet framework; ART404 examines the field of art through a deep
+              understanding of black market economies and hacker culture. ART404’s work seamlessly combines and
+              exploits ‘Corporate America’s’ understanding of branding and marketing within their own branding
+              techniques as both artists and designers.<br /><br /> Included in the show will be a collection of shirts from their fashion
+              label Maybe Legal Apparel. The shirts are designed using branding strategies from identities such as Paul
+              Frank, 3M, Nike, Disney, Pepsi and Pollo Tropical. The multiplicity of references forces a familiarity that
+              fails at pointing you in any one direction.
+              <br /><br />
+              Their practice; which functions more like an open source community, employs anything and anyone to
+              participate in their constant identity makeover. In another work; Anonymous Vs. Gagosian, ART404
+              collaborated with a member of the hacker group Anonymous in order to temporarily take down ,
+              2 3
+              gagosian.com, tate.org.uk, davidzwirner.com and other major art websites.
+               </p>
             </div>
 
 
@@ -81,59 +97,64 @@
             var geometry, material, mesh;
             var controls,time = Date.now();
             var objects = [];
-            var ray;
+            var ray;           
             var blocker = document.getElementById( 'blocker' );
-            var instructions = document.getElementById( 'blocker' );
+            var instructions = document.getElementById( 'instructions' );
+
+
             var havePointerLock = 'pointerLockElement' in document || 'mozPointerLockElement' in document || 'webkitPointerLockElement' in document;
+
             if ( havePointerLock ) {
-                var element = document.body;
-                var pointerlockchange = function ( event ) {
-                    if ( document.pointerLockElement === element || document.mozPointerLockElement === element || document.webkitPointerLockElement === element ) {
-                        controls.enabled = true;
-                        blocker.style.display = 'none';
-                    } else {
-                        controls.enabled = false;
-                        blocker.style.display = '-webkit-box';
-                        blocker.style.display = '-moz-box';
-                        blocker.style.display = 'box';
-                        instructions.style.display = '';
-                    }
+              var element = document.body;
+              var pointerlockchange = function ( event ) {
+                if ( document.pointerLockElement === element || document.mozPointerLockElement === element || document.webkitPointerLockElement === element ) {
+                  controls.enabled = true;
+                  blocker.style.display = 'none';
+                } else {
+                  controls.enabled = false;
+                  blocker.style.display = 'block';
+                  instructions.style.display = 'block';
                 }
+              }
+              var pointerlockerror = function ( event ) {
+                instructions.style.display = '';
+              }
+              // Hook pointer lock state change events
+              document.addEventListener( 'pointerlockchange', pointerlockchange, false );
+              document.addEventListener( 'mozpointerlockchange', pointerlockchange, false );
+              document.addEventListener( 'webkitpointerlockchange', pointerlockchange, false );
 
-                var pointerlockerror = function ( event ) {
-                    instructions.style.display = '';
-                }
+              document.addEventListener( 'pointerlockerror', pointerlockerror, false );
+              document.addEventListener( 'mozpointerlockerror', pointerlockerror, false );
+              document.addEventListener( 'webkitpointerlockerror', pointerlockerror, false );
 
-                // Hook pointer lock state change events
-                document.addEventListener( 'pointerlockchange', pointerlockchange, false );
-                document.addEventListener( 'mozpointerlockchange', pointerlockchange, false );
-                document.addEventListener( 'webkitpointerlockchange', pointerlockchange, false );
-                document.addEventListener( 'pointerlockerror', pointerlockerror, false );
-                document.addEventListener( 'mozpointerlockerror', pointerlockerror, false );
-                document.addEventListener( 'webkitpointerlockerror', pointerlockerror, false );
-                instructions.addEventListener( 'click', function ( event ) {
-                    instructions.style.display = 'none';
-                    // Ask the browser to lock the pointer
-                    element.requestPointerLock = element.requestPointerLock || element.mozRequestPointerLock || element.webkitRequestPointerLock;
-                    if ( /Firefox/i.test( navigator.userAgent ) ) {
-                        var fullscreenchange = function ( event ) {
-                            if ( document.fullscreenElement === element || document.mozFullscreenElement === element || document.mozFullScreenElement === element ) {
-                                document.removeEventListener( 'fullscreenchange', fullscreenchange );
-                                document.removeEventListener( 'mozfullscreenchange', fullscreenchange );
-                                element.requestPointerLock();
-                            }
-                        }
-                        document.addEventListener( 'fullscreenchange', fullscreenchange, false );
-                        document.addEventListener( 'mozfullscreenchange', fullscreenchange, false );
-                        element.requestFullscreen = element.requestFullscreen || element.mozRequestFullscreen || element.mozRequestFullScreen || element.webkitRequestFullscreen;
-                        element.requestFullscreen();
-                    } else {
-                        element.requestPointerLock();
+              instructions.addEventListener( 'click', function ( event ) {
+                instructions.style.display = 'none';
+
+                // Ask the browser to lock the pointer
+                element.requestPointerLock = element.requestPointerLock || element.mozRequestPointerLock || element.webkitRequestPointerLock;
+                if ( /Firefox/i.test( navigator.userAgent ) ) {
+                  var fullscreenchange = function ( event ) {
+                    if ( document.fullscreenElement === element || document.mozFullscreenElement === element || document.mozFullScreenElement === element ) {
+                      document.removeEventListener( 'fullscreenchange', fullscreenchange );
+                      document.removeEventListener( 'mozfullscreenchange', fullscreenchange );
+                      element.requestPointerLock();
                     }
-                }, false );
+                  }
+
+                  document.addEventListener( 'fullscreenchange', fullscreenchange, false );
+                  document.addEventListener( 'mozfullscreenchange', fullscreenchange, false );
+
+                  element.requestFullscreen = element.requestFullscreen || element.mozRequestFullscreen || element.mozRequestFullScreen || element.webkitRequestFullscreen;
+                  element.requestFullscreen();
+                } else {
+                  element.requestPointerLock();
+                }
+              }, false );
             } else {
-                  instructions.innerHTML = 'Your browser doesn\'t seem to support Pointer Lock API, sorry';
+              instructions.innerHTML = 'Your browser doesn\'t seem to support Pointer Lock API';
             }
+
 
             function init() {
 
@@ -203,180 +224,140 @@
                    scene.add( brillo );
                    objects.push ( brillo );
 
-                   brillo2 = new THREE.Mesh(
-                        new THREE.CubeGeometry( 40,40,40 ),
-                        new THREE.MeshFaceMaterial( materials ) );
+                   brillo2 = brillo.clone();
                    brillo2.position.y = 50;
                    brillo2.position.z = 400;
                    brillo2.position.x = -250;
                    scene.add( brillo2 );
                    objects.push ( brillo2 );
 
-                   brillo3 = new THREE.Mesh(
-                        new THREE.CubeGeometry( 40,40,40 ),
-                        new THREE.MeshFaceMaterial( materials ) );
+                   brillo3 = brillo.clone();
                    brillo3.position.y = 75;
                    brillo3.position.z = 375;
                    brillo3.position.x = -320;
                    scene.add( brillo3 );
                    objects.push ( brillo3 );
 
-                   brillo4 = new THREE.Mesh(
-                        new THREE.CubeGeometry( 40,40,40 ),
-                        new THREE.MeshFaceMaterial( materials ) );
+                   brillo4 = brillo.clone();
                    brillo4.position.y = 100;
                    brillo4.position.z = 200;
                    brillo4.position.x = -475;
                    scene.add( brillo4 );
                    objects.push ( brillo4 );
 
-                   brillo5 = new THREE.Mesh(
-                        new THREE.CubeGeometry( 40,40,40 ),
-                        new THREE.MeshFaceMaterial( materials ) );
+                   brillo5 = brillo.clone();
                    brillo5.position.y = 120;
                    brillo5.position.z = 530;
                    brillo5.position.x = -360;
                    scene.add( brillo5 );
                    objects.push ( brillo5 );
 
-                   brillo6 = new THREE.Mesh(
-                        new THREE.CubeGeometry( 40,40,40 ),
-                        new THREE.MeshFaceMaterial( materials ) );
+                   brillo6 = brillo.clone();
                    brillo6.position.y = 150;
                    brillo6.position.z = 450;
                    brillo6.position.x = -260;
                    scene.add( brillo6 );
                    objects.push ( brillo6 );
 
-                   brillo7 = new THREE.Mesh(
-                        new THREE.CubeGeometry( 40,40,40 ),
-                        new THREE.MeshFaceMaterial( materials ) );
+                   brillo7 = brillo.clone();
                    brillo7.position.y = 170;
                    brillo7.position.z = 550;
                    brillo7.position.x = -430;
                    scene.add( brillo7 );
                    objects.push ( brillo7 );
 
-                   brillo8 = new THREE.Mesh(
-                        new THREE.CubeGeometry( 40,40,40 ),
-                        new THREE.MeshFaceMaterial( materials ) );
+                   brillo8 = brillo.clone();
                    brillo8.position.y = 150;
                    brillo8.position.z = 350;
                    brillo8.position.x = -530;
                    scene.add( brillo8 );
                    objects.push ( brillo8 );
 
-                   brillo9 = new THREE.Mesh(
-                        new THREE.CubeGeometry( 40,40,40 ),
-                        new THREE.MeshFaceMaterial( materials ) );
+                   brillo9 = brillo.clone();
                    brillo9.position.y = 100;
                    brillo9.position.z = 300;
                    brillo9.position.x = -400;
                    scene.add( brillo9 );
                    objects.push ( brillo9 );
 
-                   brillo10 = new THREE.Mesh(
-                        new THREE.CubeGeometry( 40,40,40 ),
-                        new THREE.MeshFaceMaterial( materials ) );
+                   brillo10 = brillo.clone();
                    brillo10.position.y = 55;
                    brillo10.position.z = 460;
                    brillo10.position.x = -370;
                    scene.add( brillo10 );
                    objects.push ( brillo10 );
 
-                   brillo11 = new THREE.Mesh(
-                        new THREE.CubeGeometry( 40,40,40 ),
-                        new THREE.MeshFaceMaterial( materials ) );
+                   brillo11 = brillo.clone();
                    brillo11.position.y = 300;
                    brillo11.position.z = 425;
                    brillo11.position.x = -320;
                    scene.add( brillo11 );
                    objects.push ( brillo11 );
 
-                   brillo12 = new THREE.Mesh(
-                        new THREE.CubeGeometry( 40,40,40 ),
-                        new THREE.MeshFaceMaterial( materials ) );
+                   brillo12 = brillo.clone();
                    brillo12.position.y = 125;
                    brillo12.position.z = 370;
                    brillo12.position.x = -250;
                    scene.add( brillo12 );
                    objects.push ( brillo12 );
 
-                   brillo13 = new THREE.Mesh(
-                        new THREE.CubeGeometry( 40,40,40 ),
-                        new THREE.MeshFaceMaterial( materials ) );
+                   brillo13 = brillo.clone();
                    brillo13.position.y = 250;
                    brillo13.position.z = 450;
                    brillo13.position.x = -300;
                    scene.add( brillo13 );
                    objects.push ( brillo13 );
 
-                   brillo14 = new THREE.Mesh(
-                        new THREE.CubeGeometry( 40,40,40 ),
-                        new THREE.MeshFaceMaterial( materials ) );
+                   brillo14 = brillo.clone();
                    brillo14.position.y = 175;
                    brillo14.position.z = 320;
                    brillo14.position.x = -400;
                    scene.add( brillo14 );
                    objects.push ( brillo14 );
 
-                   brillo15 = new THREE.Mesh(
-                        new THREE.CubeGeometry( 40,40,40 ),
-                        new THREE.MeshFaceMaterial( materials ) );
+                   brillo15 = brillo.clone();
                    brillo15.position.y = 250;
                    brillo15.position.z = 500;
                    brillo15.position.x = -260;
                    scene.add( brillo15 );
                    objects.push ( brillo15 );
 
-                   brillo16 = new THREE.Mesh(
-                        new THREE.CubeGeometry( 40,40,40 ),
-                        new THREE.MeshFaceMaterial( materials ) );
+                   brillo16 = brillo.clone();
                    brillo16.position.y = 200;
                    brillo16.position.z = 420;
                    brillo16.position.x = -270;
                    scene.add( brillo16 );
                    objects.push ( brillo16 );
 
-                   brillo17 = new THREE.Mesh(
-                        new THREE.CubeGeometry( 40,40,40 ),
-                        new THREE.MeshFaceMaterial( materials ) );
+                   brillo17 = brillo.clone();
                    brillo17.position.y = 270;
                    brillo17.position.z = 300;
                    brillo17.position.x = -250;
                    scene.add( brillo17 );
                    objects.push ( brillo17 );
 
-                   brillo18 = new THREE.Mesh(
-                        new THREE.CubeGeometry( 40,40,40 ),
-                        new THREE.MeshFaceMaterial( materials ) );
+                   brillo18 = brillo.clone();
                    brillo18.position.y = 250;
                    brillo18.position.z = 350;
                    brillo18.position.x = -500;
                    scene.add( brillo18 );
                    objects.push ( brillo18 );
 
-                   brillo19 = new THREE.Mesh(
-                        new THREE.CubeGeometry( 40,40,40 ),
-                        new THREE.MeshFaceMaterial( materials ) );
+                   brillo19 = brillo.clone();
                    brillo19.position.y = 300;
                    brillo19.position.z = 300;
                    brillo19.position.x = -400;
                    scene.add( brillo19 );
                    objects.push ( brillo19 );
 
-                   brillo20 = new THREE.Mesh(
-                        new THREE.CubeGeometry( 40,40,40 ),
-                        new THREE.MeshFaceMaterial( materials ) );
+                   brillo20 = brillo.clone();
                    brillo20.position.y = 375;
                    brillo20.position.z = 400;
                    brillo20.position.x = -350;
                    scene.add( brillo20 );
                    objects.push ( brillo20 );
 
-                   brillo21 = new THREE.Mesh(
-                        new THREE.CubeGeometry( 40,40,40 ),
-                        new THREE.MeshFaceMaterial( materials ) );
+                   brillo21 = brillo.clone();
                    brillo21.position.y = 350;
                    brillo21.position.z = 425;
                    brillo21.position.x = -300;
@@ -492,7 +473,7 @@
                 endlessLabel.rotation.y = -Math.PI / 2;  
 
 
-
+                //------------------- KOONS BALLOON DOG -----------------//
 
 
                 var jsonLoader = new THREE.JSONLoader();
@@ -740,6 +721,93 @@
               }
               currentWall = 1;
               startTimer();
+
+               var krugerCardMaterials = [
+                new THREE.MeshBasicMaterial( {} ),
+                new THREE.MeshBasicMaterial( {} ),
+                new THREE.MeshBasicMaterial( {} ),
+                new THREE.MeshBasicMaterial( {} ),
+                new THREE.MeshLambertMaterial({}),
+                new THREE.MeshBasicMaterial( {
+                    ambient: 0xffffff,
+                    map: THREE.ImageUtils.loadTexture( 'textures/krugerCard.png' ) } )
+              ];
+
+                krugerLabel = new THREE.Mesh(
+                new THREE.CubeGeometry( 10, 5, 0.5),
+                new THREE.MeshFaceMaterial( krugerCardMaterials ) );
+                scene.add( krugerLabel );
+                krugerLabel.position.y = 32.5;
+                krugerLabel.position.x = 505;
+                krugerLabel.position.z = 310;
+                krugerLabel.rotation.y = -125; 
+
+          
+
+                // ------- LAST FEMALE ARTIST -------//
+
+              whiteBox = new THREE.Mesh(
+                new THREE.CubeGeometry( 20, 20, 20 ),
+                new THREE.MeshBasicMaterial({}) );
+
+
+              for(var i = 0; i < 10; i++){ 
+                    var newModel = whiteBox.clone();
+                        newModel.position.set(i,i*4 +10,i);
+                        // newModel.scale.set(i+1,i+1,i+1);
+                        scene.add(newModel); 
+              }  
+
+
+                      // texture
+
+                var manager = new THREE.LoadingManager();
+
+                manager.onProgress = function ( item, loaded, total ) {
+
+                  console.log( item, loaded, total );
+
+                };
+
+                var texture = new THREE.Texture();
+
+
+                var loader = new THREE.OBJLoader( manager );
+                loader.load( 'models/chair.obj', function ( object ) {
+
+                  object.traverse( function ( child ) {
+
+                    if ( child instanceof THREE.Mesh ) {
+
+                      child.material.map = texture;
+
+                    }
+
+                  } );
+
+                  object.position.y = - 80;
+                  scene.add( object );
+
+                } );
+
+
+
+                // loader.addEventListener( 'load', function ( event ) {
+                    
+                //     // for ( var i = 0; i < 10; i ++ ) {
+                //     var object = event.content;
+                //     scene.add( object );
+                //     object.position.x = Math.floor( Math.random() * 20 - 10 ) * 20;
+                //     object.position.y = Math.floor( Math.random() * 20 ) * 20 + 10;
+                //     object.position.z = Math.floor( Math.random() * 20 - 10 ) * 20;
+                    
+                //   // }
+                // });
+                // loader.load( 'models/Rmutt.obj', 'models/Rmutt.mtl' )
+
+
+        // }
+
               }
 
 
@@ -772,8 +840,11 @@
                 //** --    WINDOW EVENTS --   **//
                 //////////////////////////////////
 
-            renderer = new THREE.WebGLRenderer();
-            renderer.setSize( window.innerWidth, window.innerHeight );
+renderer = new THREE.WebGLRenderer({
+          preserveDrawingBuffer : true  // to allow screenshot
+        });
+
+             renderer.setSize( window.innerWidth, window.innerHeight );
 
             document.body.appendChild( renderer.domElement );
             window.addEventListener( 'resize', onWindowResize, false );
@@ -787,6 +858,8 @@
 
             init();
             animate();
+            THREEx.Screenshot.bindKey(renderer);
+
 
         </script>
     </body>

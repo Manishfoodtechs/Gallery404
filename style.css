@@ -6,6 +6,7 @@
          url('fonts/gotham-bold.ttf') format('truetype'),
          url('fonts/gotham-bold.svg#GothamBold') format('svg');
 }
+
 @font-face {
     font-family: 'GothamLight';
     src: url('fonts/gotham-light.eot');
@@ -13,6 +14,24 @@
          url('fonts/gotham-light.woff') format('woff'),
          url('fonts/gotham-light.ttf') format('truetype'),
          url('fonts/gotham-light.svg#GothamLight') format('svg');
+}
+
+@font-face {
+    font-family: 'GothamMedium';
+    src: url('fonts/gotham-medium.eot');
+    src: url('fonts/gotham-medium.eot') format('embedded-opentype'),
+         url('fonts/gotham-medium.woff') format('woff'),
+         url('fonts/gotham-medium.ttf') format('truetype'),
+         url('fonts/gotham-medium.svg#GothamMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'GothamBook';
+    src: url('fonts/gotham-book.eot');
+    src: url('fonts/gotham-book.eot') format('embedded-opentype'),
+         url('fonts/gotham-book.woff') format('woff'),
+         url('fonts/gotham-book.ttf') format('truetype'),
+         url('fonts/gotham-book.svg#GothamBook') format('svg');
 }
 
 html, body {
@@ -23,6 +42,7 @@ html, body {
 h1 {
     margin-top:0px;
 }
+
 body {
     background-color: #ffffff;
     margin: 0;
@@ -44,7 +64,6 @@ body {
     width:30%;
     padding:25px;
     color:white;
-    border-right:1px dotted white;
     height:100%;
     background-image:url(textures/leftPattern.png);
     float:left;
@@ -58,26 +77,8 @@ body {
     vertical-align:middle;
 }
 
-#rightPanel {
-    display: inline-block;
-    width: 63%;
-    float:right;
-    overflow-y: scroll;
-    height: 100%;
-
-}
-
-#rightPanel h1 {
-    margin-top:0;
-}
-
-#rightPanel h2 {
-    margin-bottom:0;
-    font-size:.9em;
-}
-
 #intro p {
-    font-size:1.5em;
+    font-size:1.3em;
 }
 
 #intro img {
@@ -86,6 +87,7 @@ body {
 
 #instructions h2 {
     font-size:1.2em;
+    font-family:"GothamMedium";
 }
 
 #instructions p {
@@ -94,6 +96,7 @@ body {
     left: 10px;
     position: relative;
     font-family:"GothamLight";
+    font-size:.9em;
 }
 
 #instructions img {
@@ -113,6 +116,33 @@ body {
 #credits a {
     color:white;
 }
+
+#rightPanel {
+    display: table;
+    width: auto;
+    overflow-y: scroll;
+    height: 100%;
+    color:white;
+    padding:25px;
+}
+
+#rightPanel h1 {
+    margin-top:0;
+}
+
+#rightPanel h2 {
+    margin-bottom:0;
+    font-size:.9em;
+}
+
+#rightPanel p  {
+    font-family:"GothamBook";
+}
+
+#rightPanel img {
+    width:20%;
+}
+
 #controls {
     width: 157px;
     height: 104px;
@@ -121,6 +151,7 @@ body {
     bottom:25px;
     right:25px;
 }
+
 .key {
     height:40px;
     width:40px;
@@ -135,6 +166,7 @@ body {
     transition: all .5s ease;
     opacity:.2;
 }
+
 .key-info {
     font-size: 8px;
     margin-left: -15px;
@@ -142,6 +174,7 @@ body {
     margin-top: -15px;
     position: absolute;
 }
+
 #a {
     clear:left;
 }
