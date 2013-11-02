@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>GALLERY404</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/base.css">
+    </head>
+
+    <body>  
+        <!--DIV THAT 3D SCENES GET LOADED INTO-->
+        <div id="scene">
+            <div id="sectionExplorer"></div>
+        </div>
+    <body>  
+        <!--LOADING SCREEN, BAR HIDDEN IN CSS-->
+        <div id="progress">
+            <span id="message">INSTALLING SHOW...</span>
+            <center>
+                <div id="progressBar" class="shadow"><div id="bar" class="shadow"></div></div>
+                <div id="start" class="disabled">ENTER</div>
+            </center>
+        </div>
+
+        <!--THE 'HOME SCREEN' DIV, SHOWS GALLERY INFO-->
+        <div id="blocker">
+
+            <div id="leftPanel">
+              <div id="leftWrapper">
+              <div id="intro">
+              <img src="images/logo.png" />
+              <p>The subtitle to your gallery<br /> can go here.</p>
+              </div>
+              <br />
+              <div id="instructions">
+                <hr>
+                <br />
+                  <div class="click">
+                    <img src="images/click.svg" /> <p> Click anywhere on<br/ > the screen to start </p>
+                  </div>
+                  <div class="mouse">
+                    <img src="images/mouse.svg" /> <p> Move your mouse<br />to look around</p>
+                  </div>
+                  <div class="keyboard">
+                    <img src="images/keyboard.svg" /> <p> Use Q,W,E,A,S,D<br /> keys to move </p>
+                  </div>
+                   <div class="jump">
+                    <img src="images/space.svg" /> <p> Use the spacebar<br />to jump </p>
+                  </div>
+                   <div class="screenshot">
+                    <img src="images/screenshot.svg" /> <p> Press P to<br />take a screenshot</p>
+                  </div>
+                   <div class="esc">
+                    <img src="images/esc.svg" /> <p> Press Escape to<br />show home screen </p>
+                  </div>
+                  <br />
+                  <br />
+                  <hr>
+                    <a class="ghlink" target="_blank" href="https://github.com/palouman/Gallery404"><img class="github" src="images/github.svg" /><p class="fork">Make your own gallery!<br /> Fork us on GitHub </p></a>
+              </div>
+              <div id="credits"><p>GALLERY404 is built with webGL using mr.doob's <a target="_blank" href="http://www.threejs.org">three.js</a> with sourcing from 3D model repositories such as <a href="http://www.turbosquid.com" target="_blank">turbosquid.</a></p></div>
+            </div>
+            </div>
+
+            <div id="rightPanel">
+                <h4>Current Show:</h4>
+              <h1> Your Show Title </h1>
+               <div class="artist" id="artist1">
+               <img src="images/artistportrait.jpg"/><h3>Artist 1</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+               </div>
+               <div class="artist" id="artist2">
+               <img src="images/artistportrait.jpg"/><h3>Artist 2</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+               </div>
+               <div class="artist" id="artist3">
+               <img src="images/artistportrait.jpg"/><h3>Artist 3</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+               </div>
+               <div class="artist" id="artist4">
+               <img src="images/artistportrait.jpg"/><h3>Artist 4</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+               </div>
+               <div class="artist" id="artist5">
+               <img src="images/artistportrait.jpg"/><h3>Artist 5</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+               </div>
+            </div>
+
+        </div>
+
+        <!--KEYBOARD CONTROL GUI BOTTOM RIGHT-->
+        <div id="keyGUI">
+            <div id="q" class="key">Q<br /><span class="key-info">Turn Left</span></div><div id="w" class="key">W<br /><span class="key-info">Forward</span></div><div id="e" class="key">E<br /><span class="key-info">Turn Right</span></div> <br />
+            <div id="a" class="key">A<br /><span class="key-info">Move Left</span></div><div id="s" class="key">S<br /><span class="key-info">Backwards</span></div><div id="d" class="key">D<br /><span class="key-info">Move Right</span></div>
+        </div>
+
+
+        <script src="js/three.min.js"></script>
+        <script src="js/detector.js"></script>
+        <script src="js/stats.min.js"></script>
+        <script src="js/PointerLockControls.js"></script>
+        <script src="js/loaders/lzma.js"></script>
+        <script src="js/loaders/ctm.js"></script>
+        <script src="js/loaders/CTMLoader.js"></script>
+        <script src="js/loaders/BinaryLoader.js"></script>
+        <script src="js/loaders/OBJLoader.js"></script>
+        <script src="js/loaders/OBJMTLLoader.js"></script>
+        <script src="js/loaders/VTKLoader.js"></script>
+        <script src="js/loaders/STLLoader.js"></script>
+        <script src="js/loaders/ColladaLoader.js"></script>
+        <script src="js/loaders/UTF8Loader.js"></script>
+        <script src="js/loaders/MTLLoader.js"></script>
+
+        <script>
+            // CHECK FOR WEBGL
+            if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
+
+            // SET GLOBAL VARIABLES
+
+            var SCREEN_WIDTH = window.innerWidth;
+            var SCREEN_HEIGHT = window.innerHeight;
+
+            var container,stats;
+
+            var camera, scene, loaded;
+            var renderer;
+            var ray;
+            var objects=[];
+
+            var currentScene;
+
+
+            var controls,time = Date.now();
+            var blocker = document.getElementById( 'blocker' );
+            var instructions = document.getElementById( 'instructions' );
+
+            var mesh, zmesh, geometry;
+
+            var mouseX = 0, mouseY = 0;
+
+            var windowHalfX = window.innerWidth / 2;
+            var windowHalfY = window.innerHeight / 2;
+
+            document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+
+            // START LOAD SCENE + ANIMATION FUNCTIONS
+
+            initLoadScene();
+            animate();
+
+
+            // INITIALIZE GALLERY SCENE POINTER LOCK CONTROLS
+
+            function initGalleryScene(){
+
+                var havePointerLock = 'pointerLockElement' in document || 'mozPointerLockElement' in document || 'webkitPointerLockElement' in document;
+                if ( havePointerLock ) {
+                    var element = document.body;
+                    var pointerlockchange = function ( event ) {
+                        if ( document.pointerLockElement === element || document.mozPointerLockElement === element || document.webkitPointerLockElement === element ) {
+                            controls.enabled = true;
+                            blocker.style.display = 'none';
+                            console.log('mouse lock on')
+
+                        } else {
+                            controls.enabled = false;
+                            blocker.style.display = 'block';
+                            instructions.style.display = '';
+                            console.log('mouse lock off')
+                        }
+                    }
+
+                    var pointerlockerror = function ( event ) {
+                        instructions.style.display = '';
+                    }
+
+                    // Hook pointer lock state change events
+                    document.addEventListener( 'pointerlockchange', pointerlockchange, false );
+                    document.addEventListener( 'mozpointerlockchange', pointerlockchange, false );
+                    document.addEventListener( 'webkitpointerlockchange', pointerlockchange, false );
+
+                    document.addEventListener( 'pointerlockerror', pointerlockerror, false );
+                    document.addEventListener( 'mozpointerlockerror', pointerlockerror, false );
+                    document.addEventListener( 'webkitpointerlockerror', pointerlockerror, false );
+
+                    blocker.addEventListener( 'click', function ( event ) {
+                    instructions.style.display = 'none';
+                    document.getElementById('keyGUI').style.display = 'block';
+                    container.appendChild( stats.domElement );
+
+                    // Ask the browser to lock the pointer
+                    element.requestPointerLock = element.requestPointerLock || element.mozRequestPointerLock || element.webkitRequestPointerLock;
+
+                        if ( /Firefox/i.test( navigator.userAgent ) ) {
+
+                            var fullscreenchange = function ( event ) {
+
+                                if ( document.fullscreenElement === element || document.mozFullscreenElement === element || document.mozFullScreenElement === element ) {
+                                    document.removeEventListener( 'fullscreenchange', fullscreenchange );
+                                    document.removeEventListener( 'mozfullscreenchange', fullscreenchange );
+                                    element.requestPointerLock();
+                                }
+
+                            }
+
+                            document.addEventListener( 'fullscreenchange', fullscreenchange, false );
+                            document.addEventListener( 'mozfullscreenchange', fullscreenchange, false );
+
+                            element.requestFullscreen = element.requestFullscreen || element.mozRequestFullscreen || element.mozRequestFullScreen || element.webkitRequestFullscreen;
+
+                            element.requestFullscreen();
+
+                        } else {
+                            element.requestPointerLock();
+                        }    
+
+                    }, false );
+
+                } else {
+                    instructions.innerHTML = 'Your browser doesn\'t seem to support Pointer Lock API';
+                }
+            }
+
+            // GHETTO jQUERY SELECTOR FUNCTION
+
+            function $( id ) {
+                return document.getElementById( id );
+            }
+
+            // RENDER MATERIALS, LIGHTS, & FOG
+
+            function handle_update( result, pieces ) {
+
+                refreshSceneView( result );
+                var m, material, count = 0;
+
+                for ( m in result.materials ) {
+                    material = result.materials[ m ];
+                    if ( ! ( material instanceof THREE.MeshFaceMaterial ) ) {
+                        if( !material.program ) {
+                            renderer.initMaterial( material, result.scene.__lights, result.scene.fog );
+                            count += 1;
+                            if( count > pieces ) {
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // LOAD SCENE CODE
+
+            function initLoadScene() {
+
+                container = document.createElement( 'div' );
+                document.body.appendChild( container );
+
+                var loadScene = createLoadScene();
+                currentScene = 0;
+
+
+                camera = loadScene.camera;
+                scene = loadScene.scene;
+
+                renderer = new THREE.WebGLRenderer();
+
+
+                renderer.setSize( SCREEN_WIDTH, SCREEN_HEIGHT );
+                renderer.domElement.style.position = "relative";
+                container.appendChild( renderer.domElement );
+
+                // THREE.jS STATISTICS
+
+                stats = new Stats();
+                stats.domElement.style.position = 'absolute';
+                stats.domElement.style.top = '0px';
+                stats.domElement.style.right = '0px';
+                stats.domElement.style.zIndex = 100;
+
+
+                // ON CLICK START FUNCTION
+
+
+                $( "start" ).addEventListener( 'click', onStartClick, false );
+
+                var callbackProgress = function( progress, result ) {
+                    var bar = 250,
+                        total = progress.total_models + progress.total_textures,
+                        loaded = progress.loaded_models + progress.loaded_textures;
+
+                    if ( total )
+                        bar = Math.floor( bar * loaded / total );
+                    $( "bar" ).style.width = bar + "px";
+
+                    count = 0;
+                    for ( var m in result.materials ) count++;
+
+                    handle_update( result, Math.floor( count/total ) );
+                }
+
+                var callbackFinished = function( result ) {
+
+                    console.log(result.scene)
+                    loaded = result;
+
+                    // STYLE CHANGE ON START CLICk
+
+                    $( "message" ).style.display = "none";
+                    $( "progressBar" ).style.display = "none";
+                    $( "start" ).style.display = "block";
+                    $( "start" ).className = "enabled";
+
+                    handle_update( result, 1 );
+
+                    // SEARCH THROUGH YOUR jSON SCENE FILE, FIND OBJECT WITH A USERDATA ATTRIBUTE YOU SET, AND MODIFY IT
+
+                    result.scene.traverse( function ( object ) {
+
+                        // KOONS INFLATION SCALE FUNCTION
+
+                        if ( object.userData.koons === true ) {
+                            function deflate() {
+                                setInterval(function() {
+                                    if (object.scale.x > 10 ) {
+                                        object.scale.x -= .1; 
+                                        object.scale.y -=.025;                    
+                                    }
+                                    else  if (object.scale.x < 10){
+                                        clearInterval();
+                                        inflate();
+                                    }
+                                }, 0050);
+                            }
+                            function inflate() {
+                                setInterval(function() {
+                                    if (object.scale.x < 20 ) {
+                                        object.scale.x += .1;
+                                        object.scale.y += .025;
+                                    }
+                                    else if (object.scale.x > 20){
+                                        clearInterval();
+                                        deflate();
+                                    }
+                                }, 0050);
+                            }
+                            inflate();
+                        }
+
+                          // PUSH OBJECTS INTO 'RAY' GROUP, MAKING THEIR TOPS SOLID
+
+                        if ( object.userData.ray === true ) {
+                            objects.push( object );
+                        }
+
+                          // HANDLE ANIMATED MODELS
+
+                        if ( object instanceof THREE.MorphAnimMesh ) {
+                            morphAnimatedObjects.push( object );
+                        }
+
+                        if ( object instanceof THREE.SkinnedMesh ) {
+                            if ( object.geometry.animation ) {
+                                THREE.AnimationHandler.add( object.geometry.animation );
+                                var animation = new THREE.Animation( object, object.geometry.animation.name );
+                                animation.JITCompile = false;
+                                animation.interpolationType = THREE.AnimationHandler.LINEAR;
+                                animation.play();
+                            }
+                        }
+                    } );
+
+
+                }
+
+                // LOADING SCREEN FUNCTIONS
+
+                $( "progress" ).style.display = "block";
+
+                var loader = new THREE.SceneLoader();
+                loader.callbackProgress = callbackProgress;
+
+                loader.load( "js/scene.js", callbackFinished );
+
+                loader.addGeometryHandler( "binary", THREE.BinaryLoader );
+                loader.addGeometryHandler( "ctm", THREE.CTMLoader );
+                loader.addGeometryHandler( "vtk", THREE.VTKLoader );
+                loader.addGeometryHandler( "stl", THREE.STLLoader );
+
+                loader.addHierarchyHandler( "obj", THREE.OBJLoader );
+                loader.addHierarchyHandler( "dae", THREE.ColladaLoader );
+                loader.addHierarchyHandler( "utf8", THREE.UTF8Loader );
+
+                window.addEventListener( 'resize', onWindowResize, false );
+
+                }
+
+                function onWindowResize() {
+
+                    windowHalfX = window.innerWidth / 2;
+                    windowHalfY = window.innerHeight / 2;
+
+                    camera.aspect = window.innerWidth / window.innerHeight;
+                    camera.updateProjectionMatrix();
+
+                    renderer.setSize( window.innerWidth, window.innerHeight );
+
+                }
+
+
+               // SET VARIABLES FOR GALLERYSCENE ON START CLICK
+
+                function onStartClick() {
+
+                    $( "progress" ).style.display = "none";
+                    $( "blocker" ).style.display = "block";
+                    document.body.style.background = "white";
+                    instructions.style.display = '';
+
+                    camera = loaded.currentCamera;
+                    camera.aspect = window.innerWidth / window.innerHeight;
+                    camera.updateProjectionMatrix();
+
+                    scene = loaded.scene;
+
+                    controls = new THREE.PointerLockControls( camera  );
+                    scene.add( controls.getObject() );
+
+                    renderer.gammaInput = true;
+                    renderer.gammaOutput = true;
+                    renderer.physicallyBasedShading = true;
+
+                    var light = new THREE.DirectionalLight( 0xffffff, 1.5 );
+                    light.position.set( 1, 1, 1 );
+                    scene.add( light );
+                    var light = new THREE.DirectionalLight( 0xffffff, 0.75 );
+                    light.position.set( -1, - 0.5, -1 );
+                    scene.add( light );
+
+                    initGalleryScene();
+                    currentScene = 1;
+
+                    // PUSH OBJECTS INTO 'RAY' GROUP, MAKING THEIR TOPS SOLID
+
+                    ray = new THREE.Raycaster();
+                    ray.ray.direction.set( 0, -1, 0 );
+
+                    // CHANGE BODY TO WHITE, ACTING AS THE SKY TO OUR GALLERY
+
+                    document.body.style.backgroundColor = 'white';
+
+
+                    // DEFINE MATERIALS TO USE FOR WALL
+
+                    var wallMaterials = [
+                    new THREE.MeshBasicMaterial( { } ),
+                    new THREE.MeshBasicMaterial( { } ),
+                    new THREE.MeshBasicMaterial( { } ),
+                    new THREE.MeshBasicMaterial( { } ),
+                    new THREE.MeshLambertMaterial({ }),
+                    new THREE.MeshBasicMaterial( { 
+                        ambient: 0xffffff,
+                        map: THREE.ImageUtils.loadTexture( 'textures/gallery/wall1.png' )} )
+                    ];
+
+                    basicWall = new THREE.Mesh(
+                    new THREE.CubeGeometry( 400, 600, 20),
+                    new THREE.MeshFaceMaterial( wallMaterials ) );
+                    scene.add( basicWall );
+                    basicWall.position.y = 300;
+                    basicWall.position.x = 435;
+                    basicWall.position.z = 500;
+                    basicWall.rotation.y = -125; 
+
+                    var koonsCardMaterials = [
+                        new THREE.MeshBasicMaterial( {} ),
+                        new THREE.MeshBasicMaterial( {} ),
+                        new THREE.MeshBasicMaterial( {} ),
+                        new THREE.MeshBasicMaterial( {} ),
+                        new THREE.MeshLambertMaterial({
+                            ambient: 0xffffff,
+                            map: THREE.ImageUtils.loadTexture( 'textures/gallery/koonsCard.png' ) }),
+                        new THREE.MeshBasicMaterial( {} )
+                    ];
+
+                    object = new THREE.Mesh(
+                    new THREE.CubeGeometry( 10, 5, 0.5),
+                    new THREE.MeshFaceMaterial( koonsCardMaterials ) );
+
+                    object.position.y = 32.5;
+                    object.position.x = 390;
+                    object.position.z = -379.5;
+                    scene.add( object );
+
+                }
+
+       
+                function onDocumentMouseMove(event) {
+                    mouseX = ( event.clientX - windowHalfX );
+                    mouseY = ( event.clientY - windowHalfY );
+                }
+
+                function createLoadScene() {
+
+                    var result = {
+
+                        scene:  new THREE.Scene(),
+                        camera: new THREE.PerspectiveCamera( 65, window.innerWidth / window.innerHeight, 1, 1000 )
+
+                    };
+
+                    result.camera.position.z = 100;
+
+                    var object, geometry, material, light, count = 500, range = 200;
+
+                    material = new THREE.MeshLambertMaterial( { color:0xffffff } );
+                    geometry = new THREE.CubeGeometry( 5, 5, 5 );
+
+                    for( var i = 0; i < count; i++ ) {
+
+                        object = new THREE.Mesh( geometry, material );
+
+                        object.position.x = ( Math.random() - 0.5 ) * range;
+                        object.position.y = ( Math.random() - 0.5 ) * range;
+                        object.position.z = ( Math.random() - 0.5 ) * range;
+
+                        object.rotation.x = Math.random() * 6;
+                        object.rotation.y = Math.random() * 6;
+                        object.rotation.z = Math.random() * 6;
+
+                        object.matrixAutoUpdate = false;
+                        object.updateMatrix();
+
+                        result.scene.add( object );
+
+                    }
+
+                    result.scene.matrixAutoUpdate = false;
+
+                    light = new THREE.PointLight( 0xffffff );
+                    result.scene.add( light );
+
+                    light = new THREE.DirectionalLight( 0x111111 );
+                    light.position.x = 1;
+                    result.scene.add( light );
+
+                    return result;
+
+                }
+                          
+                function animate() {
+
+                    requestAnimationFrame( animate );
+                    if (currentScene == 0){
+                        renderLoadScene();
+                        stats.update();
+                    }
+
+                    if (currentScene == 1){
+                        if(controls.enabled){
+                    controls.isOnObject( false );
+                    ray.ray.origin.copy( controls.getObject().position );
+                    ray.ray.origin.y -= 10;  
+                    ray.ray.origin.z -= 10; 
+                    var intersections = ray.intersectObjects( objects );
+                    if ( intersections.length > 0 ) {
+                        var distance = intersections[ 0 ].distance;
+                        if ( distance > 0 && distance < 10 ) {
+                            controls.isOnObject( true );
+                        }
+                    }
+                        }
+
+                        controls.update( Date.now() - time );
+                        renderer.render( scene, camera );
+                        time = Date.now();
+               
+                    }
+
+                    stats.update();
+                }
+
+
+
+                function renderLoadScene() {
+                    camera.position.x += ( mouseX - camera.position.x ) * .001;
+                    camera.position.y += ( - mouseY - camera.position.y ) * .001;
+
+                    camera.lookAt( scene.position );
+
+                    renderer.render( scene, camera );
+                }
+
+                // Scene explorer user interface
+
+                function toggle( id ) {
+
+                    var scn = $( "section_" + id ).style,
+                        btn = $( "plus_" + id );
+
+                    if ( scn.display == "block" ) {
+
+                        scn.display = "none";
+                        btn.innerHTML = "[+]";
+
+                    }
+                    else {
+
+                        scn.display = "block";
+                        btn.innerHTML = "[-]";
+
+                    }
+
+                }
+
+                function createToggle( label ) { return function() { toggle( label ) } };
+
+                function refreshSceneView( result ) {
+
+                    $( "sectionExplorer" ).innerHTML = generateSceneView( result );
+                    var config = [ "obj", "geo", "mat", "tex", "lit", "cam" ];
+                    for ( var i = 0; i < config.length; i++ )
+                    $( "plus_" + config[i] ).addEventListener( 'click', createToggle( config[i] ), false );
+
+                }
+
+                function generateSection( label, id, objects ) {
+
+                    var html = "";
+
+                    html += "<h3><a id='plus_" + id + "' href='#'>[+]</a> " + label + "</h3>";
+                    html += "<div id='section_" + id + "' class='part'>";
+
+                    for( var o in objects ) {
+
+                        html += o + "<br/>";
+
+                    }
+                    html += "</div>";
+
+                    return html;
+
+                }
+
+                function generateSceneView( result ) {
+
+                    var config = [
+                    [ "Objects",    "obj", result.objects ],
+                    [ "Geometries", "geo", result.geometries ],
+                    [ "Materials",  "mat", result.materials ],
+                    [ "Textures",   "tex", result.textures ],
+                    [ "Lights",     "lit", result.lights ],
+                    [ "Cameras",    "cam", result.cameras ]
+                    ];
+
+                    var html = "";
+
+                    for ( var i = 0; i < config.length; i++ )
+                        html += generateSection( config[i][0], config[i][1], config[i][2] );
+
+                    return html;
+
+                }
+
+        </script>
+
+    </body>
+</html>
